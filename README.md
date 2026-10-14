@@ -1,9 +1,37 @@
-# A0/A1/A2 RGB calyx detection — code release candidate
+# A0/A1/A2 RGB calyx detection — recovered code and reproducibility materials
 
-This is a **human-review candidate, not a published or fully reproducible release**.
-It preserves recovered code and frozen evidence for RGB detection of the calyx of
-*Physalis peruviana* L. using YOLO11n. No training, inference, metric replacement,
-test access, package installation or external publication was performed during preparation.
+The code and supporting materials are publicly accessible at
+[amayadiegoalejandro05/uchuva-yolo11n-a0-a1-a2](https://github.com/amayadiegoalejandro05/uchuva-yolo11n-a0-a1-a2).
+Public availability is distinct from scientific verification and redistribution rights.
+This repository supports substantial documentary auditing of RGB calyx detection in
+*Physalis peruviana* L. with YOLO11n; it does not reproduce the entire historical training.
+The original training launcher, all fifteen model checkpoints and complete verified
+software environments for each training run are absent from the repository.
+
+[PUBLICATION_STATUS.md](PUBLICATION_STATUS.md) records the verified current status.
+[VERIFICATION_REPORT.md](VERIFICATION_REPORT.md) documents the one executed check:
+the recovered later paired-mAP analysis, run from unchanged source in an isolated
+temporary workspace on 2026-10-14. Training, inference and other evaluators were not
+run during this review; test was not accessed. Recovered files and historical results
+have been audited for integrity. The researcher has expressly declared that the
+four scripts were developed for this research with Codex and ChatGPT assistance,
+and were not copied from external repositories. Legal ownership and any institutional
+or co-holder restrictions still require confirmation. MIT is a proposed license,
+not an adopted one: see [LICENSING_ACTIONS.md](LICENSING_ACTIONS.md) and
+[PROPOSED_LICENSE_MIT.md](PROPOSED_LICENSE_MIT.md).
+
+## Declared code provenance and AI assistance
+
+According to the responsible researcher's explicit declaration, the four recovered
+scripts were developed under the researcher's direction with assistance from Codex
+and ChatGPT. Recovery from other directories within the research environment does
+not establish third-party repository provenance. The declaration and unchanged
+script hashes are recorded in
+[RESEARCHER_CODE_PROVENANCE_DECLARATION.md](provenance/review/RESEARCHER_CODE_PROVENANCE_DECLARATION.md).
+This is declarative authorship evidence, not an independent legal audit of title.
+The researchers remain responsible for reviewing, validating, documenting and
+maintaining the code; AI tools are not designated scientific authors or copyright
+holders. The statement does not replace the journal's AI-transparency requirements.
 
 ## Experiment and scope
 
@@ -14,7 +42,8 @@ absolutely augmentation-free baseline. The final closure records an internal
 Albumentations block observed in A0 seed01. Equivalent A1/A2 console evidence is absent.
 A1 uses native geometry, HSV and Mosaic. A2 uses translate=0.1, scale=0.5 and
 fliplr=0.5 without HSV or Mosaic. A1−A2 assesses their **joint addition**, not their
-individual effects. No recipe, seed, threshold or frozen conclusion was changed.
+individual effects. No recipe, seed, threshold or frozen conclusion was changed. These validation-based
+comparisons do not establish external generalization or closed-loop robotic performance.
 Common training settings include imgsz=640, batch=8, AdamW, lr0=0.001, lrf=0.01,
 workers=8, deterministic=true and AMP=false. A1 closes Mosaic for the last ten
 epochs; A0/A2 have close_mosaic=0. See the original final lock for the complete design.
@@ -37,7 +66,14 @@ epochs; A0/A2 have close_mosaic=0. See the original final lock for the complete 
   Later figure data are separate.
 - `provenance/`: original closure/lock, archive inventories, integrity evidence,
   excluded-weight hashes, redactions, software evidence and licensing review.
-- `RELEASE_AUDIT.md`, `MISSING_FILES.md`, `SHA256SUMS.txt`: audit, gaps and integrity.
+- `RELEASE_AUDIT.md`, `MISSING_FILES.md`, `provenance/LICENSING_REVIEW.md`:
+  preparation-time records, preserved without retrospective rewriting.
+- `SHA256SUMS.txt`: unchanged historical candidate manifest; its README entry refers
+  to the archived candidate README, not this edited root README.
+- `SHA256SUMS_REVIEW.txt`: current documentation-review manifest.
+- `PUBLICATION_STATUS.md`, `VERIFICATION_REPORT.md`, `LICENSING_ACTIONS.md`,
+  `INTEGRITY_SCOPE.md`, `CODE_AVAILABILITY_DRAFT.md`: current status, executed evidence,
+  rights actions, checksum scopes and manuscript availability wording.
 
 ORIGINAL means byte-preserved local source; EXTRAÍDO DE ARCHIVO means bytes checked
 against a locked historical archive. RECONSTRUIDO includes new documentation,
@@ -57,8 +93,9 @@ Python/PyTorch/CUDA environment across all fifteen runs.
 Archived homogeneous evaluation reports Python 3.14.7, Ultralytics 8.4.157 and
 PyTorch 2.14.0+cpu. These are historical self-reports, supported by recovered local
 evaluation-venv package metadata, not a runtime certification in this preparation.
-The current audit interpreter is distinct. `provenance/reconstructed/software_evidence.json`
-separates these sources. A complete historical dependency lock is unavailable.
+The preparation-time audit interpreter is distinct. The historical record
+`provenance/reconstructed/software_evidence.json` separates those earlier sources;
+VERIFICATION_REPORT.md records the runtime observed in the current statistical check. A complete historical dependency lock is unavailable.
 The optional Albumentations version cannot be inferred from checkpoint version strings.
 
 `requirements.txt` lists direct imports justified by recovered code. Only the
@@ -78,9 +115,11 @@ verified separately; no bitwise historical training equivalence is claimed.
 
 Dataset DOI supplied by the authors: https://doi.org/10.6084/m9.figshare.34476066
 Download the dataset separately under its own terms. No images or ground-truth
-annotations are redistributed. The DOI landing page could not be retrieved by the
-browser used in preparation; remote availability, version and split correspondence
-were not independently verified. No remote dataset files were downloaded.
+annotations are redistributed. The DOI is retained as supplied by the authors. This review did not inspect or
+download the Figshare deposit files; content, license and exact dataset-version
+correspondence with the campaign have not been independently verified. The browser
+lookup of the DOI landing page was unsuccessful. Public code availability does not
+redistribute the separately deposited images or ground-truth annotations.
 
 The campaign expects 1062 training images/2882 objects and 109 validation images/312
 objects, with class 0 named `calyx`. Counts alone do not establish dataset identity.
@@ -97,7 +136,7 @@ without asserting that the replacement is historical evidence.
 ## Execution layout for future approved replication
 
 The original scripts retain their path assumptions. Do not execute them in the
-source result directories or directly in this candidate. Prepare a new disposable
+source result directories or directly in this repository. Prepare a new disposable
 workspace, outside original data/results, and stage the files as follows:
 
 ```text
@@ -129,7 +168,7 @@ The original Platform training launcher was not recovered. Historical effective
 exports, seed/determinism values, pretrained=true and model-family references are
 available for documentary reconstruction, but original initial pretrained bytes,
 complete per-run environments and historical input/sampling state are missing.
-Consequently this candidate does not offer a verified end-to-end training command.
+Consequently this repository does not offer a verified end-to-end training command.
 Do not treat redacted exports or checkpoint train_args as portable executable recipes.
 
 ## Homogeneous global evaluation
@@ -208,42 +247,65 @@ the fifteen saved validation summaries, without dataset or model weights:
 python -B scripts/plot_a0_a1_a2_paired_map_deltas.py
 ```
 
-Run only in the staged disposable workspace. This later script uses Student-t
+This exact, unchanged script was executed successfully in a separate temporary
+workspace during the 2026-10-14 review. It reads the fifteen per-run JSON summaries;
+the companion CSV tables were independently used for numerical cross-checks, not
+as script inputs. See [VERIFICATION_REPORT.md](VERIFICATION_REPORT.md) for commands,
+observed dependency versions, input/output hashes and numeric tolerances.
+Run future checks only in a staged disposable workspace. This later script uses Student-t
 95% intervals, df=4: mean_delta ± t(0.975,4) × SD_delta/sqrt(5), and verifies rounded
 closure controls. The original full script generating all closure CIs and exact
 Wilcoxon p-values was not recovered. Those values remain documentary evidence in
 the original final lock; no replacement statistical implementation is represented
-as historical code and no closed metrics were recomputed during preparation.
+as historical code. This review regenerated only the later paired analysis in
+isolation; it neither replaced official results nor recomputed model evaluation
+metrics. These intervals estimate uncertainty in mean paired differences under a
+Student-t method; this check performed no formal hypothesis test or Wilcoxon analysis.
 
-## Integrity, limits and publication review
+## Integrity, limits and scientific publication review
 
-All four archive SHA-256 hashes agree with the final lock, ZIP CRC checks pass,
-and fifteen unique formal weights agree with reference hashes and local evaluation
-copies. Source code was AST-parsed; JSON/YAML and copied/extracted bytes were
-validated. No experiment module or unit test was executed. No dedicated safe
-experiment unit tests were found. `SHA256SUMS.txt` covers all package files except
-itself (avoiding self-reference); the outer ZIP digest is supplied separately.
+Historical preparation verified archive/checkpoint hashes, extracted-file integrity,
+Python syntax, JSON/YAML and the package manifest. Those historical checks are
+preserved in RELEASE_AUDIT.md and are not presented as new executions in this review.
+At review start, all 146 historical manifest entries matched the inspected `main`
+snapshot; all 149 tracked files were inventoried and the checkout was clean.
 
-Audit-only: historical training, complete cloud-runtime identity, original console
-provenance and full closure statistical implementation. Conditionally executable:
-validation/operational evaluation with external verified dataset and weights;
-difficulty with external validation GT and included predictions; later paired mAP
-analysis with included summaries and compatible scientific dependencies. Execution
-was not runtime-tested in this preparation. This is not a fully reproducible release.
+Only README.md is edited among pre-existing files. All recovered scripts, thirty
+training-configuration derivatives, result CSV/JSON, closure documents, audits,
+requirements.txt and the historical manifest remain byte-identical to the reviewed
+commit. The original README is archived in
+`provenance/review/historical/README_candidate_2026-10-14.md`.
+[INTEGRITY_SCOPE.md](INTEGRITY_SCOPE.md) explains how the unchanged historical
+manifest and the new `SHA256SUMS_REVIEW.txt` must be interpreted.
 
-Confirm external-script authorship and redistribution rights before publication;
-no blanket MIT license is assigned to recovered external work. Review upstream
-dependency terms. Private identifiers and locations have been removed from exported
-configs/results; originals are retained locally with hashes. Read RELEASE_AUDIT.md
-and MISSING_FILES.md before approving any GitHub or DOI deposit.
+**Executed and verified:** later paired mAP analysis from fifteen saved summaries,
+with outputs matching the closed means and intervals and companion per-seed CSVs.
+**Available but not executed here:** homogeneous global evaluator, operational
+evaluator and difficulty analysis. Their execution still requires appropriately
+verified external validation data and, for inference, the excluded formal weights.
+**Documentary only:** historical training launch, complete cloud-runtime identity,
+original console provenance and the full statistical closure implementation.
 
-## Proposed Code Availability statement (current, unpublished state)
+The later statistical check establishes partial reproducibility of that analysis,
+not historical training or every evaluator. No experiment unit tests were executed,
+no model was loaded, and no external-generalization or closed-loop claim is made.
+The requirements file is a reconstructed direct-dependency list, not a recovered
+environment lock; its historical version evidence must remain distinct from the
+observed 2026-10-14 analysis runtime.
 
-“A review candidate containing the recovered A0/A1/A2 validation, operational-metric,
-difficulty-analysis and later paired mAP analysis code, together with frozen result
-tables and provenance records, has been prepared but has not yet been publicly
-deposited. The dataset is referenced separately by DOI 10.6084/m9.figshare.34476066.
-The candidate excludes images, ground-truth annotations and model checkpoints.
-The original training launcher, complete per-run training environments and the full
-statistical closure implementation were not recovered; therefore, complete end-to-end
-reproducibility is not claimed.”
+The researcher has declared authorship of the four scripts; legal title, the legal
+copyright name/year, institutional restrictions and any other holders' authorization
+remain unconfirmed. MIT is prepared only as a conditional proposal for original
+components that their holders may license. No definitive LICENSE or repository-wide
+license has been assigned. See [LICENSING_ACTIONS.md](LICENSING_ACTIONS.md) and
+[PROPOSED_LICENSE_MIT.md](PROPOSED_LICENSE_MIT.md); public visibility does not settle rights.
+Scientific gaps are retained in MISSING_FILES.md and PUBLICATION_STATUS.md; they do
+not, by themselves, require repeating training to publish accurately scoped materials.
+
+## Code availability for the manuscript
+
+See [CODE_AVAILABILITY_DRAFT.md](CODE_AVAILABILITY_DRAFT.md) for the proposed wording.
+Recovered configurations, evaluators, later paired analysis, frozen tables and
+provenance are publicly accessible at the GitHub URL above. No software DOI or
+definitive scientific release is claimed. Dataset DOI:
+https://doi.org/10.6084/m9.figshare.34476066.

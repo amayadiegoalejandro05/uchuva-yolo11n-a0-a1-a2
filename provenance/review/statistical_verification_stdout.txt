@@ -1,0 +1,40 @@
+SOURCE FILES (per-run formal validation metrics):
+  VERIFICATION_WORKSPACE\validation_results\A0_seed01\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A0_seed02\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A0_seed03\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A0_seed04\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A0_seed05\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A1_seed01\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A1_seed02\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A1_seed03\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A1_seed04\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A1_seed05\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A2_seed01\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A2_seed02\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A2_seed03\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A2_seed04\metrics_summary.json
+  VERIFICATION_WORKSPACE\validation_results\A2_seed05\metrics_summary.json
+
+SOURCE mAP50-95 VALUES (seed order 1..5):
+  A0: [0.670676227431841, 0.642991552030952, 0.653199129892924, 0.645435399384968, 0.670332994960039]
+  A1: [0.729689877309753, 0.727373591782340, 0.727899568494535, 0.730121777202447, 0.726797431188990]
+  A2: [0.729691880805055, 0.722951128895207, 0.729628832323562, 0.725839357674990, 0.719297142004799]
+
+PAIRED DELTAS (seed order 1..5):
+  A1-A0: [0.059013649877912, 0.084382039751388, 0.074700438601611, 0.084686377817478, 0.056464436228951]
+  A2-A0: [0.059015653373213, 0.079959576864255, 0.076429702430638, 0.080403958290021, 0.048964147044760]
+  A1-A2: [-0.000002003495302, 0.004422462887134, -0.001729263829027, 0.004282419527457, 0.007500289184191]
+
+AUDIT TABLE:
+Contrast           Mean    Sample SD                        95% t-CI   Positive
+A1-A0       0.071849388  0.013522547 [0.055058929121, 0.088639847790]        5/5
+A2-A0       0.068954608  0.014199255 [0.051323904122, 0.086585311079]        5/5
+A1-A2       0.002894781  0.003716289 [-0.001719601133, 0.007509162843]        3/5
+
+CONSISTENCY CONTROLS: PASS (agreement at six-decimal rounding).
+
+CREATED FILES:
+  VERIFICATION_WORKSPACE\figures\a0_a1_a2_paired_map_deltas.pdf
+  VERIFICATION_WORKSPACE\figures\a0_a1_a2_paired_map_deltas.png
+  VERIFICATION_WORKSPACE\figures\a0_a1_a2_paired_map_deltas.svg
+  VERIFICATION_WORKSPACE\figures\a0_a1_a2_paired_map_deltas_data.csv
