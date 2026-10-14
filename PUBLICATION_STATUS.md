@@ -48,11 +48,19 @@ A1−A2 es la adición conjunta de HSV y Mosaic, no identifica efectos individua
 
 ## Autorizaciones y pruebas
 
-La instrucción del propietario autoriza este cambio documental y PR; no constituye
-prueba de titularidad o una licencia para scripts externos. Los derechos pendientes
-son un **bloqueo para una versión científica definitiva**, aunque los archivos sean
-públicos. No hay nueva licencia ni autorización de terceros recuperada. Véase
-[LICENSING_ACTIONS.md](LICENSING_ACTIONS.md).
+Actualización de procedencia del 2026-10-14: el investigador responsable declaró
+expresamente haber desarrollado los cuatro scripts para su investigación con
+asistencia de Codex y ChatGPT, sin copiarlos de repositorios externos. Los otros
+directorios de recuperación pertenecían al mismo entorno de investigación.
+La declaración está registrada con los hashes intactos en
+[RESEARCHER_CODE_PROVENANCE_DECLARATION.md](provenance/review/RESEARCHER_CODE_PROVENANCE_DECLARATION.md).
+
+Esa evidencia declarativa no es auditoría jurídica independiente. Faltan confirmar
+titular(es), nombre legal, año de copyright, restricciones institucionales y derechos
+de otros titulares si existen. MIT es aceptada como **propuesta condicional**, no
+como licencia vigente; únicamente se prepara PROPOSED_LICENSE_MIT.md, sin LICENSE
+definitivo. Véase [LICENSING_ACTIONS.md](LICENSING_ACTIONS.md). Las herramientas de
+IA se documentan como asistencia, no como titulares ni autores científicos.
 
 [VERIFICATION_REPORT.md](VERIFICATION_REPORT.md) conserva la única ejecución de
 esta fase: análisis posterior emparejado mAP sobre summaries existentes. Se observó
@@ -70,10 +78,16 @@ el manifiesto del candidato de la documentación revisada.
 
 ## Próximos pasos y límites
 
-**Bloqueos reales:** confirmar por escrito autoría y permisos de los scripts
-recuperados; acordar con titulares la licencia/atribuciones aplicables sin
-relicenciar material ajeno; obtener revisión y aprobación de autores del PR.
-La versión estable debe declarar un alcance de reproducibilidad parcial.
+**Antes del merge documental:** aprobación de los autores de la declaración,
+los documentos de procedencia y el borrador de disponibilidad; MIT debe seguir
+identificada como propuesta, sin adopción implícita mediante el merge.
+
+**Bloqueos reales antes de MIT definitiva y release v1.0.0:** confirmar titular(es),
+nombre legal, año de copyright, ausencia de restricciones institucionales y
+autorización de otros titulares si existen; aprobar alcance y atribuciones por
+componente. La procedencia declarada de los scripts ya no es desconocida, pero
+esas condiciones jurídicas no están resueltas. La versión estable debe declarar
+un alcance de reproducibilidad histórica parcial.
 
 **Limitaciones que deben declararse, no corregirse mediante nuevos experimentos:**
 launcher ausente, pesos excluidos, entornos históricos incompletos y código de

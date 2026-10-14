@@ -13,8 +13,25 @@ software environments for each training run are absent from the repository.
 the recovered later paired-mAP analysis, run from unchanged source in an isolated
 temporary workspace on 2026-10-14. Training, inference and other evaluators were not
 run during this review; test was not accessed. Recovered files and historical results
-have been audited for integrity. Redistribution permissions for externally recovered
-scripts remain unresolved: see [LICENSING_ACTIONS.md](LICENSING_ACTIONS.md).
+have been audited for integrity. The researcher has expressly declared that the
+four scripts were developed for this research with Codex and ChatGPT assistance,
+and were not copied from external repositories. Legal ownership and any institutional
+or co-holder restrictions still require confirmation. MIT is a proposed license,
+not an adopted one: see [LICENSING_ACTIONS.md](LICENSING_ACTIONS.md) and
+[PROPOSED_LICENSE_MIT.md](PROPOSED_LICENSE_MIT.md).
+
+## Declared code provenance and AI assistance
+
+According to the responsible researcher's explicit declaration, the four recovered
+scripts were developed under the researcher's direction with assistance from Codex
+and ChatGPT. Recovery from other directories within the research environment does
+not establish third-party repository provenance. The declaration and unchanged
+script hashes are recorded in
+[RESEARCHER_CODE_PROVENANCE_DECLARATION.md](provenance/review/RESEARCHER_CODE_PROVENANCE_DECLARATION.md).
+This is declarative authorship evidence, not an independent legal audit of title.
+The researchers remain responsible for reviewing, validating, documenting and
+maintaining the code; AI tools are not designated scientific authors or copyright
+holders. The statement does not replace the journal's AI-transparency requirements.
 
 ## Experiment and scope
 
@@ -276,10 +293,12 @@ The requirements file is a reconstructed direct-dependency list, not a recovered
 environment lock; its historical version evidence must remain distinct from the
 observed 2026-10-14 analysis runtime.
 
-External-script authorship and redistribution rights require documentary confirmation
-before a definitive scientific software release, even though GitHub is already public.
-No repository-wide license was assigned. Review the current action list in
-[LICENSING_ACTIONS.md](LICENSING_ACTIONS.md); public visibility does not resolve it.
+The researcher has declared authorship of the four scripts; legal title, the legal
+copyright name/year, institutional restrictions and any other holders' authorization
+remain unconfirmed. MIT is prepared only as a conditional proposal for original
+components that their holders may license. No definitive LICENSE or repository-wide
+license has been assigned. See [LICENSING_ACTIONS.md](LICENSING_ACTIONS.md) and
+[PROPOSED_LICENSE_MIT.md](PROPOSED_LICENSE_MIT.md); public visibility does not settle rights.
 Scientific gaps are retained in MISSING_FILES.md and PUBLICATION_STATUS.md; they do
 not, by themselves, require repeating training to publish accurately scoped materials.
 

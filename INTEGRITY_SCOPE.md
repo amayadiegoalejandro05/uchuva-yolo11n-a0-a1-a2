@@ -45,3 +45,22 @@ copia archivada; se verifica el nuevo manifiesto sobre todas sus rutas actuales.
 La comprobación de hashes prueba identidad de bytes, no corrección científica,
 autoría, licencia, identidad del dataset remoto ni entornos históricos completos.
 Git mantiene la política * -text y core.autocrlf=false para evitar conversiones.
+
+## Actualización posterior de procedencia y propuesta MIT — 2026-10-14
+
+Esta actualización documental del mismo PR parte del commit
+`0b23a48f1d331138f173080afbf4e585a4c79f39`. Se modifican README.md, LICENSING_ACTIONS.md,
+PUBLICATION_STATUS.md, CODE_AVAILABILITY_DRAFT.md y este alcance documental;
+se añaden PROPOSED_LICENSE_MIT.md y la declaración posterior bajo provenance/review.
+SHA256SUMS_REVIEW.txt se actualiza para describir el árbol documental propuesto.
+Los hashes de todos los documentos nuevos/modificados figuran en ese manifiesto,
+excepto el propio manifiesto para evitar autorreferencia. Su versión anterior
+queda preservada por el commit anterior de Git, no se sustituye evidencia científica.
+
+SHA256SUMS.txt, la auditoría histórica de licencias, RELEASE_AUDIT.md, MISSING_FILES.md,
+los manifiestos históricos reconstruidos, el README original archivado, los logs y
+el reporte de la prueba estadística previa permanecen sin cambios. No se ejecuta
+ningún análisis nuevo; el PASS anterior conserva su fecha, entradas y alcance.
+Todos los scripts, configuraciones y CSV/JSON científicos siguen byte-idénticos a
+main y al commit anterior de la revisión. La declaración de procedencia no se
+inyecta en los scripts para no alterar la evidencia experimental histórica.

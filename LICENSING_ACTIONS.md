@@ -1,40 +1,64 @@
-# Acciones de licencia y autoría
+# Acciones de licencia, procedencia declarada y propuesta MIT
 
-Revisión: **2026-10-14**, snapshot `715265ec848be0e1b4e8b2d4398dfa530cf8921e`.
-Estado: **derechos de redistribución no resueltos para una versión científica definitiva**.
-La visibilidad pública no demuestra que las licencias estén resueltas. No se
-asigna una licencia, no se elimina material y no se presupone cobertura MIT heredada.
-`provenance/LICENSING_REVIEW.md` se conserva como auditoría de preparación histórica.
+Actualización: **2026-10-14**, sobre el commit documental `0b23a48f1d331138f173080afbf4e585a4c79f39`.
+Estado: **procedencia de los cuatro scripts declarada por el investigador;
+confirmaciones jurídicas pendientes; MIT propuesta, todavía no adoptada**.
+El estado científico y el PASS estadístico previamente documentados no cambian.
 
-## Evidencia disponible
+## A. Procedencia declarada
 
-No existe LICENSE/COPYING ni atribución de titulares verificable en el snapshot.
-Los cuatro scripts Python no contienen encabezados de autoría/licencia explícita.
-file_inventory.json documenta sus directorios externos de recuperación y hashes,
-pero una ruta de procedencia no prueba autoría ni permiso de redistribución. El
-propietario de GitHub, el autor técnico de un commit y la autorización de esta
-tarea tampoco prueban por sí solos titularidad de código previo.
+El investigador responsable confirmó expresamente que desarrolló para su
+investigación los cuatro scripts siguientes, con asistencia de Codex y ChatGPT:
 
-## Clasificación de archivos y acciones
+- evaluation/original/validate_all.py
+- operational_metrics/original/operational_recall.py
+- difficulty_analysis/original/integral_difficulty.py
+- statistics/original/scripts/plot_a0_a1_a2_paired_map_deltas.py
 
-| Clasificación solicitada | Archivos o material | Evidencia y acción |
+Ninguno fue copiado de un repositorio externo, según esa declaración. Fueron
+recuperados de otros directorios del propio entorno de investigación, no de
+repositorios de terceros. La ubicación de recuperación no determina autoría ni
+derechos. Ya no se los clasifica como código de procedencia externa no identificada.
+
+## B. Evidencia de autoría y asistencia de IA
+
+Existe una **declaración explícita del investigador**, registrada por archivo/hash
+en [RESEARCHER_CODE_PROVENANCE_DECLARATION.md](provenance/review/RESEARCHER_CODE_PROVENANCE_DECLARATION.md).
+No se efectuó una auditoría jurídica independiente de titularidad o de restricciones.
+No se atribuye titularidad a Codex o ChatGPT ni autoría científica del artículo a
+esas herramientas. La revisión, validación, documentación y mantenimiento del
+código corresponden a los investigadores. La descripción del uso de IA no sustituye
+los requisitos de transparencia que establezca la revista.
+
+## C. Derechos pendientes y clasificación actual
+
+| Material | Procedencia/autoría documentada | Derechos y licencia actuales |
 |---|---|---|
-| Autorización verificada | Esta revisión documental y su PR | Autorización explícita del propietario en la tarea. Alcance: editar documentos, ejecutar el análisis aislado y proponer un PR; no es una licencia de distribución del software histórico |
-| Autorización pendiente | evaluation/original/validate_all.py | Recuperado de directorio externo; autor/titular y permiso escrito no documentados. Confirmar ambos antes de la versión definitiva |
-| Autorización pendiente | operational_metrics/original/operational_recall.py | Misma limitación; no inferir que importar Ultralytics confiera licencia sobre este script |
-| Autorización pendiente | difficulty_analysis/original/integral_difficulty.py | Misma limitación; comentarios de protocolo/v2 no establecen autoría ni autorización |
-| Autorización pendiente | statistics/original/scripts/plot_a0_a1_a2_paired_map_deltas.py | Código posterior recuperado, PASS numérico no demuestra derechos; confirmar autoría y permiso |
-| Autorización pendiente | provenance/original/A0_A1_A2_CIERRE_FINAL_2026-09-21.md y A0_A1_A2_campaign_final_lock.json | Procedencia de cierre documentada; no se identifica un titular o concesión explícita por archivo. Autores deben confirmar autorización y atribución |
-| Material original sin licencia explícita | results/** y configs/** | Materiales del estudio/derivados según sus manifiestos, no código de dependencias; preservar atribución y obtener confirmación del titular. «Original» describe procedencia, no una conclusión jurídica de autoría |
-| Material original sin licencia explícita | README.md, RELEASE_AUDIT.md, MISSING_FILES.md, requirements.txt, training/RECOVERY_STATUS.md, statistics/RECOVERY_STATUS.md, .gitignore, .gitattributes y SHA256SUMS.txt | Documentación, listas de dependencias y controles elaborados al preparar el paquete; no se observa una concesión de licencia en estos archivos |
-| Material original sin licencia explícita | provenance/reconstructed/**, provenance/SOURCE_ROOTS.md y provenance/LICENSING_REVIEW.md | Documentación y manifiestos derivados; no acreditan ni sustituyen una concesión de derechos sobre sus fuentes |
-| Material original sin licencia explícita | Documentos y manifiestos añadidos por este PR bajo raíz y provenance/review/** | Revisión solicitada por el propietario; no incorpora una licencia retroactiva. El README histórico archivado conserva su condición original |
-| Material de terceros con licencia identificada | Dependencias externas, no vendorizadas: NumPy, SciPy, Matplotlib, Ultralytics, PyTorch, Pillow y pandas | Ver tabla siguiente. Esas licencias cubren sus distribuciones respectivas, no asignan automáticamente licencia a estos scripts |
+| Los cuatro scripts anteriores | Desarrollo propio del investigador con asistencia de IA, según declaración explícita | No licencia definitiva; confirmar titular(es), nombre legal, año, restricciones institucionales y autorización de otros titulares si existen |
+| Configuraciones y resultados del estudio | Procedencia del estudio/derivados documentada en manifiestos; no se altera | No se extiende MIT automáticamente; confirmar derechos y alcance si se incluyen en una adopción futura |
+| Cierre original, lock y demás documentos históricos | Procedencia documental registrada, no reescrita | La declaración recibida se refiere a los cuatro scripts, no aclara titularidad de todos los documentos; no aplicarles MIT por inferencia |
+| Documentación de revisión y esta propuesta | Elaborada por encargo de revisión del propietario | Autorización de cambios documentales verificada por la tarea; no equivale a una licencia general de distribución |
+| Bibliotecas externas no vendorizadas | Distribuciones de terceros con sus propios términos | Mantienen sus licencias; MIT no se aplica a ellas |
 
-Ningún script científico recuperado se clasifica como autorización de redistribución
-verificada. No se encontró material de terceros vendorizado con licencia explícita
-en el snapshot; esto no prueba autoría independiente de cada implementación.
-Las menciones de bibliotecas/metadata de software no son copias de sus paquetes.
+La declaración resuelve el vacío de **procedencia declarada** de los scripts, pero
+no documenta por sí sola la titularidad efectiva ni elimina posibles restricciones
+institucionales o derechos de otros colaboradores. No se inventan permisos,
+contratos o acuerdos. Tampoco se presume una licencia MIT heredada de otro proyecto.
+
+## D. Licencia propuesta
+
+El investigador acepta **MIT como propuesta** para los componentes originales sobre
+los que los titulares tengan facultad de licenciamiento. El texto oficial, con
+campos pendientes y alcance condicional, está en
+[PROPOSED_LICENSE_MIT.md](PROPOSED_LICENSE_MIT.md). No se creó LICENSE definitivo,
+no se asignó una licencia a dependencias ni a documentos de titularidad no aclarada.
+
+## Auditoría histórica
+
+provenance/LICENSING_REVIEW.md se conserva sin cambios. La nota posterior de
+procedencia enlazada arriba complementa ese documento: la recuperación desde otro
+directorio del entorno propio no es evidencia de copia de terceros. RELEASE_AUDIT.md
+y MISSING_FILES.md mantienen su contexto temporal, no se reescriben retrospectivamente.
 
 ## Dependencias de terceros: licencias identificadas, sin relicenciar el repositorio
 
@@ -61,19 +85,25 @@ Fuentes primarias de referencia consultadas:
 Las páginas actuales no se usan para inventar equivalencia con releases históricos.
 Dependencias/transitivos pueden contener avisos adicionales; no se distribuyen en este PR.
 
-## Bloqueos y tareas concretas
+## Confirmaciones y próximos pasos
 
-1. **Bloqueo:** autores/titulares deben confirmar por escrito la autoría y derechos
-   de redistribución de cada uno de los cuatro scripts recuperados y del cierre.
-   Una declaración o permiso identificable por archivo/hash permite resolverlo;
-   no basta con la existencia pública del repositorio.
-2. **Bloqueo:** tras esa confirmación, autores deben acordar la licencia y las
-   atribuciones aplicables a su material, separando cualquier aportación externa;
-   este PR no hace esa elección ni aplica MIT/AGPL/otra licencia.
-3. Verificar los términos del depósito de dataset y dependencias si se redistribuyen
-   en otro paquete futuro. Aquí los datos/pesos/paquetes no se redistribuyen; el DOI
-   se enlaza y la licencia del dataset **no fue verificada**.
+**Antes de aprobar esta documentación o hacer merge del PR:** los autores deben
+revisar la fidelidad de la declaración registrada, el alcance parcial de Code
+Availability y que MIT figure únicamente como propuesta condicional. El merge de
+documentación no debe describirse como adopción de una licencia definitiva.
 
-No se recomienda repetir entrenamientos para resolver derechos. Tampoco se cambia
-visibilidad ni se eliminan archivos de forma silenciosa. Los autores deciden cómo
-resolver la autorización de materiales ya visibles antes de una versión definitiva.
+**Antes de un LICENSE definitivo y de una versión científica estable v1.0.0:**
+
+1. Confirmar titular o titulares efectivos del código y el nombre legal del aviso.
+2. Confirmar el año o años correspondientes, sin inferirlos de esta revisión.
+3. Documentar la ausencia de restricciones institucionales aplicables.
+4. Confirmar si existen otros titulares/colaboradores con derechos y obtener sus
+   autorizaciones, o confirmar que no hay otros titulares que deban autorizar.
+5. Aprobar el alcance por componente y las atribuciones; solo entonces adoptar
+   MIT para material propio licenciable, mediante una acción futura autorizada.
+
+Estas confirmaciones son bloqueos reales para la **adopción definitiva de MIT**;
+no son razones para modificar resultados ni repetir entrenamientos. El launcher
+ausente, los pesos no distribuidos y los entornos incompletos siguen siendo
+limitaciones explícitas de reproducibilidad histórica, no se solucionan con una licencia.
+No se propone merge automático, release, tag, DOI ni cambio de visibilidad.
