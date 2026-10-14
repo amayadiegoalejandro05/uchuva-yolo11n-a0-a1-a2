@@ -1,0 +1,1577 @@
+[
+  {
+    "source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2.zip",
+    "name": "EXPERIMENTOS_A0_A1_A2.zip",
+    "sha256": "a5f0f58e98dfd16300ec77093306f9bb7ebf3cfb9dd4805505ae2e162274f860",
+    "reference_sha256": "a5f0f58e98dfd16300ec77093306f9bb7ebf3cfb9dd4805505ae2e162274f860",
+    "hash_matches_reference": true,
+    "size_bytes": 73830226,
+    "reference_size_bytes": 73830226,
+    "member_count": 208,
+    "extensions": {
+      ".pt": 15,
+      ".csv": 96,
+      ".json": 96,
+      ".md": 1
+    },
+    "source_code_members": [],
+    "members": [
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/best.pt",
+        "size_bytes": 5443034,
+        "crc32": "7026cb67"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 229,
+        "crc32": "3aabfa15"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 291,
+        "crc32": "490b5cab"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 591,
+        "crc32": "dd6fded9"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4118,
+        "crc32": "44cfd755"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 592,
+        "crc32": "af3f6c0f"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4119,
+        "crc32": "de0db216"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 589,
+        "crc32": "67f08758"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4116,
+        "crc32": "cb780c94"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 591,
+        "crc32": "c58ee543"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4118,
+        "crc32": "992c4df7"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1702,
+        "crc32": "d4bc427c"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2609,
+        "crc32": "f8a45880"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/best.pt",
+        "size_bytes": 5443162,
+        "crc32": "cc801481"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "c358662c"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "f276ae8a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 589,
+        "crc32": "a814225a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4066,
+        "crc32": "5379db38"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 589,
+        "crc32": "e7bf8083"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4066,
+        "crc32": "151787e7"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 593,
+        "crc32": "68adec0c"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4070,
+        "crc32": "2552d939"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 589,
+        "crc32": "679baf31"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4066,
+        "crc32": "e38bd473"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1689,
+        "crc32": "85e79116"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2596,
+        "crc32": "2f740dc4"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/best.pt",
+        "size_bytes": 5443098,
+        "crc32": "3743309f"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 230,
+        "crc32": "3a368359"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 292,
+        "crc32": "0e38749c"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 591,
+        "crc32": "8d338ac7"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4068,
+        "crc32": "0c6a0a81"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 594,
+        "crc32": "52afbd27"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4071,
+        "crc32": "1ae69377"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 595,
+        "crc32": "28215ef5"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4072,
+        "crc32": "8a9e6c3f"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 593,
+        "crc32": "d18b3036"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4070,
+        "crc32": "e557d58f"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1700,
+        "crc32": "abf5890e"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2607,
+        "crc32": "b2004841"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/best.pt",
+        "size_bytes": 5443162,
+        "crc32": "12c9c79d"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 232,
+        "crc32": "bfd7f354"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 294,
+        "crc32": "a8ea0c03"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 590,
+        "crc32": "97aa34c9"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4067,
+        "crc32": "7c2102d1"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 594,
+        "crc32": "ebf72db2"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4071,
+        "crc32": "118777dd"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 585,
+        "crc32": "ae24b000"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4062,
+        "crc32": "e530a292"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 593,
+        "crc32": "7dc0a305"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4070,
+        "crc32": "e5ab989f"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1700,
+        "crc32": "f84164e6"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2607,
+        "crc32": "b5c816f5"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/best.pt",
+        "size_bytes": 5443098,
+        "crc32": "f8dfed58"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "b6736deb"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "f1817021"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 592,
+        "crc32": "812bb9d8"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4069,
+        "crc32": "67c84b79"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 594,
+        "crc32": "6c13961a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4071,
+        "crc32": "f71b9ac3"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 591,
+        "crc32": "7e01cd11"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4068,
+        "crc32": "01baf3a9"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 590,
+        "crc32": "5fbdf834"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4067,
+        "crc32": "5d208c41"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1700,
+        "crc32": "23287b40"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2607,
+        "crc32": "6a623119"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/SMOKE/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "8443c434"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/SMOKE/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "ab5b3907"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/SMOKE/training-configuration.csv",
+        "size_bytes": 1711,
+        "crc32": "2ba785e4"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A0/SMOKE/training-configuration.json",
+        "size_bytes": 2618,
+        "crc32": "f4e439c3"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/best.pt",
+        "size_bytes": 5443226,
+        "crc32": "977ed268"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 230,
+        "crc32": "30f6adb2"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 292,
+        "crc32": "92fa220b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 587,
+        "crc32": "534d9e54"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4064,
+        "crc32": "32666e39"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 591,
+        "crc32": "84f16fd2"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4068,
+        "crc32": "a07ecaf1"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 592,
+        "crc32": "b1d161a1"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4069,
+        "crc32": "c6b3c5bd"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 586,
+        "crc32": "f4b2b3e9"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4063,
+        "crc32": "3f162b4b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1727,
+        "crc32": "936297a8"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2634,
+        "crc32": "a9d370bc"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/best.pt",
+        "size_bytes": 5443226,
+        "crc32": "9ecd4476"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "6c56b100"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "dde1af4a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 589,
+        "crc32": "028758fb"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4116,
+        "crc32": "bf4bdf14"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 586,
+        "crc32": "2dcd246a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4113,
+        "crc32": "8aae0230"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 592,
+        "crc32": "26f3694d"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4119,
+        "crc32": "3caa6c9e"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 592,
+        "crc32": "613545f7"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4119,
+        "crc32": "6d4aa3c9"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1708,
+        "crc32": "adb050b8"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2615,
+        "crc32": "dc07ebe3"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/best.pt",
+        "size_bytes": 5443226,
+        "crc32": "6c6247a2"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 228,
+        "crc32": "b7a94eaa"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 290,
+        "crc32": "18a5671b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 591,
+        "crc32": "513294a1"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4068,
+        "crc32": "e749e48c"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 593,
+        "crc32": "06618bf6"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4070,
+        "crc32": "72d6fcd7"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 593,
+        "crc32": "9fdd07e4"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4070,
+        "crc32": "54b7cc56"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 587,
+        "crc32": "60f018a8"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4064,
+        "crc32": "5104757e"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1717,
+        "crc32": "ef3222fb"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2624,
+        "crc32": "41eb2b57"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/best.pt",
+        "size_bytes": 5443226,
+        "crc32": "9fd16b29"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 232,
+        "crc32": "691cf8cc"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 294,
+        "crc32": "d6ea8a8a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 590,
+        "crc32": "5e74c1eb"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4067,
+        "crc32": "d1dd0bf0"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 592,
+        "crc32": "849d1bb8"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4069,
+        "crc32": "4f6501b9"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 594,
+        "crc32": "b7fcaa84"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4071,
+        "crc32": "c4b478c2"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 595,
+        "crc32": "308e481f"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4072,
+        "crc32": "496de748"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1717,
+        "crc32": "8c38f29d"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2624,
+        "crc32": "fb15d995"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/best.pt",
+        "size_bytes": 5443226,
+        "crc32": "ee3295ef"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "954a1977"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "3f805f88"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 590,
+        "crc32": "7d6a9198"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4067,
+        "crc32": "1044fc54"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 593,
+        "crc32": "ca9e12d2"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4070,
+        "crc32": "4801e15a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 594,
+        "crc32": "6efb2217"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4071,
+        "crc32": "7025358e"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 592,
+        "crc32": "c0dcbc65"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4069,
+        "crc32": "50efc2f8"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1717,
+        "crc32": "b30599be"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2624,
+        "crc32": "97721469"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/SMOKE/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "0784b9c3"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/SMOKE/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "98c1c371"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/SMOKE/training-configuration.csv",
+        "size_bytes": 1727,
+        "crc32": "37c0b6c1"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A1/SMOKE/training-configuration.json",
+        "size_bytes": 2634,
+        "crc32": "b4d2d6bf"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/best.pt",
+        "size_bytes": 5443162,
+        "crc32": "5cac9dd4"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "b232360a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "0aa1c546"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 594,
+        "crc32": "d047b47a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4071,
+        "crc32": "64038f86"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 589,
+        "crc32": "7d9d30bd"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4066,
+        "crc32": "4dd5b38b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 589,
+        "crc32": "a702e23e"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4066,
+        "crc32": "3b2b474b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 593,
+        "crc32": "0d7f6794"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4070,
+        "crc32": "9edb75a8"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1706,
+        "crc32": "8cb528de"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2613,
+        "crc32": "1a00e7b3"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/best.pt",
+        "size_bytes": 5443162,
+        "crc32": "14958427"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "50fe34fa"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "ff118e0e"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 593,
+        "crc32": "bb43d28b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4070,
+        "crc32": "557f3c49"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 592,
+        "crc32": "1423a125"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4069,
+        "crc32": "ccf5bde6"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 591,
+        "crc32": "fb01bc9e"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4068,
+        "crc32": "5d95c62c"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 591,
+        "crc32": "6b081259"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4068,
+        "crc32": "dffa999d"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1695,
+        "crc32": "54aed1a2"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2602,
+        "crc32": "89dcddf7"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/best.pt",
+        "size_bytes": 5443162,
+        "crc32": "ae5884f8"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 230,
+        "crc32": "a963dc8c"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 292,
+        "crc32": "b96e74c9"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 592,
+        "crc32": "d417cfee"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4069,
+        "crc32": "19187bde"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 585,
+        "crc32": "fdd0b75b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4062,
+        "crc32": "517a90d6"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 590,
+        "crc32": "c61a4b4b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4067,
+        "crc32": "03ebed88"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 589,
+        "crc32": "2c88e719"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4066,
+        "crc32": "8c60501c"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1706,
+        "crc32": "0e2190e2"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2613,
+        "crc32": "7dd91c39"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/best.pt",
+        "size_bytes": 5445523,
+        "crc32": "816e65e1"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "a5996982"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "e1c57fc9"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 594,
+        "crc32": "51d1ab1d"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4071,
+        "crc32": "2e8435d3"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 593,
+        "crc32": "d0c0b716"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4070,
+        "crc32": "f52e0cb8"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 591,
+        "crc32": "c582d5ec"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4068,
+        "crc32": "4ad25060"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 596,
+        "crc32": "f235fdb3"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4073,
+        "crc32": "e8d2afc7"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1757,
+        "crc32": "ceb1ddfc"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2664,
+        "crc32": "ed758bbf"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/best.pt",
+        "size_bytes": 5443162,
+        "crc32": "b1f8dd9b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/PERFORMANCE METRICS/performance-metrics.csv",
+        "size_bytes": 231,
+        "crc32": "57459f5a"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/PERFORMANCE METRICS/performance-metrics.json",
+        "size_bytes": 293,
+        "crc32": "63a8efad"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAIN_CHARTS_TRAINING/mAP50(B).csv",
+        "size_bytes": 593,
+        "crc32": "de8e26ba"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAIN_CHARTS_TRAINING/mAP50(B).json",
+        "size_bytes": 4070,
+        "crc32": "89f9cf62"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAIN_CHARTS_TRAINING/mAP50-95(B).csv",
+        "size_bytes": 595,
+        "crc32": "53ab59c0"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAIN_CHARTS_TRAINING/mAP50-95(B).json",
+        "size_bytes": 4072,
+        "crc32": "5a8ada9e"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAIN_CHARTS_TRAINING/precision(B).csv",
+        "size_bytes": 592,
+        "crc32": "6cce131b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAIN_CHARTS_TRAINING/precision(B).json",
+        "size_bytes": 4069,
+        "crc32": "1ee684d6"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAIN_CHARTS_TRAINING/recall(B).csv",
+        "size_bytes": 588,
+        "crc32": "2c89196b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAIN_CHARTS_TRAINING/recall(B).json",
+        "size_bytes": 4065,
+        "crc32": "137e1f6e"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAINING CONFIGURATION/training-configuration.csv",
+        "size_bytes": 1704,
+        "crc32": "2a4b5ede"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAINING CONFIGURATION/training-configuration.json",
+        "size_bytes": 2611,
+        "crc32": "938f54ff"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/SMOKE/performance-metrics.csv",
+        "size_bytes": 227,
+        "crc32": "719ac140"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/SMOKE/performance-metrics.json",
+        "size_bytes": 289,
+        "crc32": "486dea70"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/SMOKE/training-configuration.csv",
+        "size_bytes": 1717,
+        "crc32": "3783629b"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/A2/SMOKE/training-configuration.json",
+        "size_bytes": 2624,
+        "crc32": "b27adb64"
+      },
+      {
+        "name": "EXPERIMENTOS_A0_A1_A2/README.md",
+        "size_bytes": 516,
+        "crc32": "4fdb54e6"
+      }
+    ]
+  },
+  {
+    "source": "EXPERIMENT_ROOT/validation_results.zip",
+    "name": "validation_results.zip",
+    "sha256": "83e5cbc3851fcf7782fa0a7ab9dbc99af840e8e5641d98fc81c20ecdf73566c4",
+    "reference_sha256": "83e5cbc3851fcf7782fa0a7ab9dbc99af840e8e5641d98fc81c20ecdf73566c4",
+    "hash_matches_reference": true,
+    "size_bytes": 12914,
+    "reference_size_bytes": 12914,
+    "member_count": 19,
+    "extensions": {
+      ".json": 17,
+      ".csv": 2
+    },
+    "source_code_members": [],
+    "members": [
+      {
+        "name": "validation_results/A0_seed01/metrics_summary.json",
+        "size_bytes": 407,
+        "crc32": "a55faf05"
+      },
+      {
+        "name": "validation_results/A0_seed02/metrics_summary.json",
+        "size_bytes": 408,
+        "crc32": "0a3493c6"
+      },
+      {
+        "name": "validation_results/A0_seed03/metrics_summary.json",
+        "size_bytes": 407,
+        "crc32": "35969549"
+      },
+      {
+        "name": "validation_results/A0_seed04/metrics_summary.json",
+        "size_bytes": 408,
+        "crc32": "0c173b0d"
+      },
+      {
+        "name": "validation_results/A0_seed05/metrics_summary.json",
+        "size_bytes": 405,
+        "crc32": "f4767aac"
+      },
+      {
+        "name": "validation_results/A1_seed01/metrics_summary.json",
+        "size_bytes": 408,
+        "crc32": "4dd61693"
+      },
+      {
+        "name": "validation_results/A1_seed02/metrics_summary.json",
+        "size_bytes": 407,
+        "crc32": "e3414d67"
+      },
+      {
+        "name": "validation_results/A1_seed03/metrics_summary.json",
+        "size_bytes": 406,
+        "crc32": "59e397b0"
+      },
+      {
+        "name": "validation_results/A1_seed04/metrics_summary.json",
+        "size_bytes": 407,
+        "crc32": "f0b4d7c3"
+      },
+      {
+        "name": "validation_results/A1_seed05/metrics_summary.json",
+        "size_bytes": 407,
+        "crc32": "326e7ecb"
+      },
+      {
+        "name": "validation_results/A2_seed01/metrics_summary.json",
+        "size_bytes": 407,
+        "crc32": "71ae90e7"
+      },
+      {
+        "name": "validation_results/A2_seed02/metrics_summary.json",
+        "size_bytes": 407,
+        "crc32": "608fcc43"
+      },
+      {
+        "name": "validation_results/A2_seed03/metrics_summary.json",
+        "size_bytes": 408,
+        "crc32": "456b0c63"
+      },
+      {
+        "name": "validation_results/A2_seed04/metrics_summary.json",
+        "size_bytes": 407,
+        "crc32": "09124ae6"
+      },
+      {
+        "name": "validation_results/A2_seed05/metrics_summary.json",
+        "size_bytes": 408,
+        "crc32": "4a49049b"
+      },
+      {
+        "name": "validation_results/all_validation_results.csv",
+        "size_bytes": 3241,
+        "crc32": "8ab94236"
+      },
+      {
+        "name": "validation_results/all_validation_results.json",
+        "size_bytes": 6575,
+        "crc32": "0b09a9c1"
+      },
+      {
+        "name": "validation_results/condition_summary.csv",
+        "size_bytes": 752,
+        "crc32": "590db36b"
+      },
+      {
+        "name": "validation_results/evaluation_environment.json",
+        "size_bytes": 322,
+        "crc32": "86ccc2af"
+      }
+    ]
+  },
+  {
+    "source": "EXPERIMENT_ROOT/operational_results.zip",
+    "name": "operational_results.zip",
+    "sha256": "8bcbe4c282d76373a45eeef07e4ed6530e39cca5ef67e7014e3e16d8b09befcb",
+    "reference_sha256": "8bcbe4c282d76373a45eeef07e4ed6530e39cca5ef67e7014e3e16d8b09befcb",
+    "hash_matches_reference": true,
+    "size_bytes": 2769430,
+    "reference_size_bytes": 2769430,
+    "member_count": 65,
+    "extensions": {
+      ".csv": 33,
+      ".json": 32
+    },
+    "source_code_members": [],
+    "members": [
+      {
+        "name": "operational_results/A0_seed01/confidence_sweep.csv",
+        "size_bytes": 49218,
+        "crc32": "0e0b1b60"
+      },
+      {
+        "name": "operational_results/A0_seed01/confidence_sweep.json",
+        "size_bytes": 114140,
+        "crc32": "f74a102f"
+      },
+      {
+        "name": "operational_results/A0_seed01/predictions_lowconf.csv",
+        "size_bytes": 63046,
+        "crc32": "027e0c3c"
+      },
+      {
+        "name": "operational_results/A0_seed01/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "14762950"
+      },
+      {
+        "name": "operational_results/A0_seed02/confidence_sweep.csv",
+        "size_bytes": 80735,
+        "crc32": "5d7c5dff"
+      },
+      {
+        "name": "operational_results/A0_seed02/confidence_sweep.json",
+        "size_bytes": 183401,
+        "crc32": "933f22f9"
+      },
+      {
+        "name": "operational_results/A0_seed02/predictions_lowconf.csv",
+        "size_bytes": 99966,
+        "crc32": "b8b1b53c"
+      },
+      {
+        "name": "operational_results/A0_seed02/selected_operating_point.json",
+        "size_bytes": 834,
+        "crc32": "362b49d3"
+      },
+      {
+        "name": "operational_results/A0_seed03/confidence_sweep.csv",
+        "size_bytes": 53556,
+        "crc32": "f01c5753"
+      },
+      {
+        "name": "operational_results/A0_seed03/confidence_sweep.json",
+        "size_bytes": 123070,
+        "crc32": "0304cf44"
+      },
+      {
+        "name": "operational_results/A0_seed03/predictions_lowconf.csv",
+        "size_bytes": 67381,
+        "crc32": "e5a54eec"
+      },
+      {
+        "name": "operational_results/A0_seed03/selected_operating_point.json",
+        "size_bytes": 847,
+        "crc32": "7bfdda41"
+      },
+      {
+        "name": "operational_results/A0_seed04/confidence_sweep.csv",
+        "size_bytes": 48458,
+        "crc32": "ca27d4c1"
+      },
+      {
+        "name": "operational_results/A0_seed04/confidence_sweep.json",
+        "size_bytes": 111028,
+        "crc32": "23eaefe3"
+      },
+      {
+        "name": "operational_results/A0_seed04/predictions_lowconf.csv",
+        "size_bytes": 60773,
+        "crc32": "87a3fb97"
+      },
+      {
+        "name": "operational_results/A0_seed04/selected_operating_point.json",
+        "size_bytes": 849,
+        "crc32": "a528fd1e"
+      },
+      {
+        "name": "operational_results/A0_seed05/confidence_sweep.csv",
+        "size_bytes": 50833,
+        "crc32": "cf36ed79"
+      },
+      {
+        "name": "operational_results/A0_seed05/confidence_sweep.json",
+        "size_bytes": 116539,
+        "crc32": "7201f6d7"
+      },
+      {
+        "name": "operational_results/A0_seed05/predictions_lowconf.csv",
+        "size_bytes": 63743,
+        "crc32": "0b3f5343"
+      },
+      {
+        "name": "operational_results/A0_seed05/selected_operating_point.json",
+        "size_bytes": 849,
+        "crc32": "eb316fe8"
+      },
+      {
+        "name": "operational_results/A1_seed01/confidence_sweep.csv",
+        "size_bytes": 187871,
+        "crc32": "f24b29f8"
+      },
+      {
+        "name": "operational_results/A1_seed01/confidence_sweep.json",
+        "size_bytes": 423705,
+        "crc32": "68bd19b9"
+      },
+      {
+        "name": "operational_results/A1_seed01/predictions_lowconf.csv",
+        "size_bytes": 228001,
+        "crc32": "e8e6cd85"
+      },
+      {
+        "name": "operational_results/A1_seed01/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "17deebc3"
+      },
+      {
+        "name": "operational_results/A1_seed02/confidence_sweep.csv",
+        "size_bytes": 188194,
+        "crc32": "a038707e"
+      },
+      {
+        "name": "operational_results/A1_seed02/confidence_sweep.json",
+        "size_bytes": 424140,
+        "crc32": "1a098c27"
+      },
+      {
+        "name": "operational_results/A1_seed02/predictions_lowconf.csv",
+        "size_bytes": 228749,
+        "crc32": "74def316"
+      },
+      {
+        "name": "operational_results/A1_seed02/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "2fd100f3"
+      },
+      {
+        "name": "operational_results/A1_seed03/confidence_sweep.csv",
+        "size_bytes": 183532,
+        "crc32": "ba265e8d"
+      },
+      {
+        "name": "operational_results/A1_seed03/confidence_sweep.json",
+        "size_bytes": 414550,
+        "crc32": "7fddf1b7"
+      },
+      {
+        "name": "operational_results/A1_seed03/predictions_lowconf.csv",
+        "size_bytes": 220490,
+        "crc32": "82347da6"
+      },
+      {
+        "name": "operational_results/A1_seed03/selected_operating_point.json",
+        "size_bytes": 849,
+        "crc32": "ed9534c6"
+      },
+      {
+        "name": "operational_results/A1_seed04/confidence_sweep.csv",
+        "size_bytes": 220164,
+        "crc32": "7fce8509"
+      },
+      {
+        "name": "operational_results/A1_seed04/confidence_sweep.json",
+        "size_bytes": 495870,
+        "crc32": "5df60588"
+      },
+      {
+        "name": "operational_results/A1_seed04/predictions_lowconf.csv",
+        "size_bytes": 268307,
+        "crc32": "ac9941f6"
+      },
+      {
+        "name": "operational_results/A1_seed04/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "84834720"
+      },
+      {
+        "name": "operational_results/A1_seed05/confidence_sweep.csv",
+        "size_bytes": 278293,
+        "crc32": "84360854"
+      },
+      {
+        "name": "operational_results/A1_seed05/confidence_sweep.json",
+        "size_bytes": 625343,
+        "crc32": "9834b2ca"
+      },
+      {
+        "name": "operational_results/A1_seed05/predictions_lowconf.csv",
+        "size_bytes": 334341,
+        "crc32": "9f483e34"
+      },
+      {
+        "name": "operational_results/A1_seed05/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "57d1f228"
+      },
+      {
+        "name": "operational_results/A2_seed01/confidence_sweep.csv",
+        "size_bytes": 337700,
+        "crc32": "3d5860da"
+      },
+      {
+        "name": "operational_results/A2_seed01/confidence_sweep.json",
+        "size_bytes": 757214,
+        "crc32": "7b261e60"
+      },
+      {
+        "name": "operational_results/A2_seed01/predictions_lowconf.csv",
+        "size_bytes": 406910,
+        "crc32": "127212e9"
+      },
+      {
+        "name": "operational_results/A2_seed01/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "aeba13ca"
+      },
+      {
+        "name": "operational_results/A2_seed02/confidence_sweep.csv",
+        "size_bytes": 178553,
+        "crc32": "6e7af8f7"
+      },
+      {
+        "name": "operational_results/A2_seed02/confidence_sweep.json",
+        "size_bytes": 403971,
+        "crc32": "d5054f65"
+      },
+      {
+        "name": "operational_results/A2_seed02/predictions_lowconf.csv",
+        "size_bytes": 216437,
+        "crc32": "fae3075d"
+      },
+      {
+        "name": "operational_results/A2_seed02/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "684c0a8c"
+      },
+      {
+        "name": "operational_results/A2_seed03/confidence_sweep.csv",
+        "size_bytes": 120771,
+        "crc32": "0da1f9e4"
+      },
+      {
+        "name": "operational_results/A2_seed03/confidence_sweep.json",
+        "size_bytes": 275965,
+        "crc32": "4c27e30c"
+      },
+      {
+        "name": "operational_results/A2_seed03/predictions_lowconf.csv",
+        "size_bytes": 150469,
+        "crc32": "3d8b8839"
+      },
+      {
+        "name": "operational_results/A2_seed03/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "589f9064"
+      },
+      {
+        "name": "operational_results/A2_seed04/confidence_sweep.csv",
+        "size_bytes": 153257,
+        "crc32": "ac8822c0"
+      },
+      {
+        "name": "operational_results/A2_seed04/confidence_sweep.json",
+        "size_bytes": 346531,
+        "crc32": "16545a6d"
+      },
+      {
+        "name": "operational_results/A2_seed04/predictions_lowconf.csv",
+        "size_bytes": 187237,
+        "crc32": "b41b007b"
+      },
+      {
+        "name": "operational_results/A2_seed04/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "f751f396"
+      },
+      {
+        "name": "operational_results/A2_seed05/confidence_sweep.csv",
+        "size_bytes": 229437,
+        "crc32": "eac476b7"
+      },
+      {
+        "name": "operational_results/A2_seed05/confidence_sweep.json",
+        "size_bytes": 516791,
+        "crc32": "fcfe7d78"
+      },
+      {
+        "name": "operational_results/A2_seed05/predictions_lowconf.csv",
+        "size_bytes": 281123,
+        "crc32": "b81ed001"
+      },
+      {
+        "name": "operational_results/A2_seed05/selected_operating_point.json",
+        "size_bytes": 848,
+        "crc32": "011e7bb0"
+      },
+      {
+        "name": "operational_results/all_operational_results.csv",
+        "size_bytes": 6474,
+        "crc32": "71ffe990"
+      },
+      {
+        "name": "operational_results/all_operational_results.json",
+        "size_bytes": 13476,
+        "crc32": "dc213caa"
+      },
+      {
+        "name": "operational_results/operational_condition_summary.csv",
+        "size_bytes": 759,
+        "crc32": "7daa54bc"
+      },
+      {
+        "name": "operational_results/operational_environment.json",
+        "size_bytes": 564,
+        "crc32": "1b16c95c"
+      },
+      {
+        "name": "operational_results/validation_manifest.csv",
+        "size_bytes": 17626,
+        "crc32": "8a1ee9d2"
+      }
+    ]
+  },
+  {
+    "source": "EXPERIMENT_ROOT/integral_results.zip",
+    "name": "integral_results.zip",
+    "sha256": "0fabf998adc33cfdcac3d41d43191a7c0642c4264bdcfb3792550e2fbbd972ec",
+    "reference_sha256": "0fabf998adc33cfdcac3d41d43191a7c0642c4264bdcfb3792550e2fbbd972ec",
+    "hash_matches_reference": true,
+    "size_bytes": 22353,
+    "reference_size_bytes": 22353,
+    "member_count": 9,
+    "extensions": {
+      ".csv": 6,
+      ".json": 3
+    },
+    "source_code_members": [],
+    "members": [
+      {
+        "name": "integral_results/all_integral_results.csv",
+        "size_bytes": 4856,
+        "crc32": "4b21a0b7"
+      },
+      {
+        "name": "integral_results/all_integral_results.json",
+        "size_bytes": 12754,
+        "crc32": "001cdb40"
+      },
+      {
+        "name": "integral_results/difficulty_dataset_summary.json",
+        "size_bytes": 622,
+        "crc32": "50f17a2a"
+      },
+      {
+        "name": "integral_results/difficulty_results_long.csv",
+        "size_bytes": 8309,
+        "crc32": "06e2ebba"
+      },
+      {
+        "name": "integral_results/gt_difficulty_manifest.csv",
+        "size_bytes": 35675,
+        "crc32": "b2534c6b"
+      },
+      {
+        "name": "integral_results/integral_condition_summary.csv",
+        "size_bytes": 2332,
+        "crc32": "651adc96"
+      },
+      {
+        "name": "integral_results/paired_delta_summary.csv",
+        "size_bytes": 2631,
+        "crc32": "8a1c682e"
+      },
+      {
+        "name": "integral_results/paired_deltas_by_seed.csv",
+        "size_bytes": 9132,
+        "crc32": "062de160"
+      },
+      {
+        "name": "integral_results/v2_sensitivity_audit.json",
+        "size_bytes": 2781,
+        "crc32": "b2003f9c"
+      }
+    ]
+  }
+]

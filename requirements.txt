@@ -1,0 +1,10 @@
+# Reconstructed dependency list justified by recovered source imports.
+# This is NOT the historical dependency lock or a tested install specification.
+# Evaluation records and formal checkpoint metadata identify Ultralytics 8.4.157.
+ultralytics==8.4.157
+torch
+numpy
+pandas
+Pillow
+matplotlib
+scipy

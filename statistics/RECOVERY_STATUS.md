@@ -1,0 +1,3 @@
+# Análisis recuperado
+
+validate_all.py y operational_recall.py generan resúmenes por condición; integral_difficulty.py calcula media, SD muestral (ddof=1) y diferencias emparejadas A1−A0, A2−A0 y A1−A2. El script posterior plot_a0_a1_a2_paired_map_deltas.py calcula IC95% t para mAP50–95 (t.ppf(0.975, df=4) × SD_delta / sqrt(5)). Se preserva como análisis posterior recuperado. No se encontró el script original que produjo todos los IC y Wilcoxon exactos del lock; estos valores pueden auditarse documentalmente, pero su implementación histórica no está recuperada. Los flags v2 dentro del script integral son sensibilidad descriptiva histórica; no son criterios predeclarados de aceptación ni promoción de A0/A1/A2.

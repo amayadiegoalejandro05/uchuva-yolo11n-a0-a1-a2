@@ -1,0 +1,14 @@
+[
+  {
+    "source": "DOWNLOADS/A0_A1_A2_campaign_final_lock.json",
+    "duplicate": "DOWNLOADS/A0_A1_A2_campaign_final_lock (1).json",
+    "sha256": "8b07517f05d0616a9a0cdc51ba6d582435c0f6d54d1f3701961691b0ea81c11b",
+    "identical": true
+  },
+  {
+    "source": "DOWNLOADS/A0_A1_A2_CIERRE_FINAL_2026-09-21.md",
+    "duplicate": "DOWNLOADS/A0_A1_A2_CIERRE_FINAL_2026-09-21 (1).md",
+    "sha256": "12712ef1f84e44c55499e984576d303b03563e9800bd2cd22f77142eb32bad95",
+    "identical": true
+  }
+]

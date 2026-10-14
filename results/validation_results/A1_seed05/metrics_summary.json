@@ -1,0 +1,14 @@
+{
+  "condition": "A1",
+  "seed": 5,
+  "run": "A1_seed05",
+  "checkpoint": "weights\\A1_seed05_best.pt",
+  "checkpoint_sha256": "3c20234e3e354ca078ecac7319d7068eb9e4631a232cf512ab20c84f6939c55e",
+  "images": 109,
+  "instances": 312,
+  "mAP50_95": 0.7267974311889897,
+  "mAP50": 0.9505825702603543,
+  "mAP75": 0.8587874961478432,
+  "precision": 0.894094330571213,
+  "recall": 0.8717948717948718
+}

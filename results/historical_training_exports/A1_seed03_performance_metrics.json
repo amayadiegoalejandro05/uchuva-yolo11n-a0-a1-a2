@@ -1,0 +1,14 @@
+{
+  "train/box_loss": 0.62391,
+  "train/cls_loss": 0.38923,
+  "train/dfl_loss": 0.91118,
+  "precision": 0.838024,
+  "recall": 0.875,
+  "mAP50": 0.944668,
+  "mAP50-95": 0.728488,
+  "val/box_loss": 0.8587,
+  "val/cls_loss": 0.53294,
+  "val/dfl_loss": 1.00968,
+  "lr": 0.00003,
+  "epoch": 50
+}

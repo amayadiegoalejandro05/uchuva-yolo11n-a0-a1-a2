@@ -1,0 +1,143 @@
+{
+  "archived_evaluation_environment": {
+    "python": "3.14.7",
+    "ultralytics": "8.4.157",
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "imgsz": 640,
+    "batch": 8,
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "rect": true,
+    "split": "val",
+    "augment": false
+  },
+  "cloud_A0_seed01_documentary_evidence": {
+    "source": "Ultralytics Platform console excerpt supplied by the authors for A0 seed01",
+    "confirmed_run": "A0_seed01",
+    "ultralytics": "8.4.157",
+    "python": "3.12.3",
+    "pytorch": "2.14.0+cu132",
+    "cuda_build_from_pytorch_suffix": "13.2",
+    "cuda_device_index": 3,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "reported_vram_mib": 97252,
+    "scope_caution": "The complete Python/PyTorch/CUDA/GPU stack was directly recovered from the A0 seed01 console. Ultralytics 8.4.157 is additionally preserved in the 15 formal checkpoints. Full environment equality across every A1/A2 run was not independently recoverable from the archived artifacts and is therefore not asserted."
+  },
+  "package_metadata": [
+    {
+      "package": "ultralytics",
+      "current_audit_interpreter_metadata": "8.4.21",
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "8.4.157",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/ultralytics-8.4.157.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    },
+    {
+      "package": "torch",
+      "current_audit_interpreter_metadata": "2.9.1+cpu",
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "2.14.0",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/torch-2.14.0.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    },
+    {
+      "package": "torchvision",
+      "current_audit_interpreter_metadata": "0.24.1+cpu",
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "0.29.0",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/torchvision-0.29.0.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    },
+    {
+      "package": "numpy",
+      "current_audit_interpreter_metadata": "1.26.4",
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "2.5.3",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/numpy-2.5.3.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    },
+    {
+      "package": "pandas",
+      "current_audit_interpreter_metadata": "3.0.3",
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "3.0.6",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/pandas-3.0.6.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    },
+    {
+      "package": "pillow",
+      "current_audit_interpreter_metadata": "12.1.1",
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "12.3.0",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/pillow-12.3.0.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    },
+    {
+      "package": "matplotlib",
+      "current_audit_interpreter_metadata": "3.10.8",
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "3.11.2",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/matplotlib-3.11.2.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    },
+    {
+      "package": "scipy",
+      "current_audit_interpreter_metadata": "1.17.1",
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "1.18.1",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/scipy-1.18.1.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    },
+    {
+      "package": "pyyaml",
+      "current_audit_interpreter_metadata": "6.0.3",
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "6.0.3",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/pyyaml-6.0.3.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    },
+    {
+      "package": "albumentations",
+      "current_audit_interpreter_metadata": null,
+      "recovered_evaluation_venv_metadata": [
+        {
+          "version": "2.0.8",
+          "source": "EXPERIMENT_ROOT/.venv/Lib/site-packages/albumentations-2.0.8.dist-info/METADATA"
+        }
+      ],
+      "historical_training_environment_inferred": false
+    }
+  ],
+  "runtime_validation_performed": false
+}

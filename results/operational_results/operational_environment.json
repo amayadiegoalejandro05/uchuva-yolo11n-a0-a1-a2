@@ -1,0 +1,17 @@
+{
+  "python": "3.14.7",
+  "ultralytics": "8.4.157",
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "imgsz": 640,
+  "prediction_confidence_floor": 0.001,
+  "nms_iou": 0.7,
+  "max_det": 300,
+  "match_iou": 0.5,
+  "match_iou_status": "provisional_unverified_against_classical_augmentation_v2",
+  "precision_target": 0.98,
+  "validation_images": 109,
+  "validation_instances": 312,
+  "validation_fingerprint_sha256": "30e92af8e4b7b46a74512f4e5a68d92f790c7c9aa4d6f9edc03f3662a958d6c2"
+}

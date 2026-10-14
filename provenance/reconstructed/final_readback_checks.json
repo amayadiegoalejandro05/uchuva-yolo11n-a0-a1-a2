@@ -1,0 +1,10 @@
+{
+  "frozen_thresholds_equal_archived_sweep_optimum": 15,
+  "common_training_parameters_agree_with_exports_checkpoint_args_and_lock": 15,
+  "historical_final_epoch_exports_checked": 15,
+  "matching_definition_unchanged": true,
+  "inference_executed": false,
+  "metrics_recomputed": false,
+  "test_split_accessed": false,
+  "repository_context_graph": "VALID nodes=128 edges=236"
+}

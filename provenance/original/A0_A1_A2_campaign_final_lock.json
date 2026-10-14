@@ -1,0 +1,813 @@
+{
+  "document_type": "A0_A1_A2_campaign_final_lock",
+  "closure_date": "2026-09-21",
+  "status": "CLOSED_WITH_DOCUMENTED_LIMITATIONS",
+  "scope": "Separate native-augmentation/ablation campaign. Do not silently merge absolute metrics with Classical Augmentation v2.",
+  "scientific_question": "Compare no configurable training augmentation (A0), the native standard policy (A1), and its geometric ablation (A2) under paired seeds.",
+  "dataset": {
+    "name": "Calyx_uchuva",
+    "task": "single-class detection",
+    "class": "calyx",
+    "images": {
+      "train": 1062,
+      "val": 109,
+      "test": 109,
+      "total": 1280
+    },
+    "objects": {
+      "train": 2882,
+      "val": 312,
+      "test": 311,
+      "total": 3505
+    },
+    "validation_local_fingerprint_sha256": "30e92af8e4b7b46a74512f4e5a68d92f790c7c9aa4d6f9edc03f3662a958d6c2",
+    "profile_test_status": "frozen_but_historically_consulted",
+    "test_used_in_current_A0_A1_A2_analysis": false,
+    "domain_metadata_status": "pending_reproducible_provenance_for_semi_field_claim",
+    "domain_metadata_note": "Working curation states val/test are semi-field only, but the current reproducible profile explicitly reports that reliable laboratory/semi-field metadata was not available."
+  },
+  "design": {
+    "formal_runs": 15,
+    "conditions": {
+      "A0": {
+        "role": "no configurable training augmentation",
+        "hsv_h": 0.0,
+        "hsv_s": 0.0,
+        "hsv_v": 0.0,
+        "degrees": 0.0,
+        "translate": 0.0,
+        "scale": 0.0,
+        "shear": 0.0,
+        "perspective": 0.0,
+        "flipud": 0.0,
+        "fliplr": 0.0,
+        "mosaic": 0.0,
+        "close_mosaic": 0,
+        "mixup": 0.0,
+        "cutmix": 0.0,
+        "copy_paste": 0.0,
+        "bgr": 0.0
+      },
+      "A1": {
+        "role": "Ultralytics native standard policy: geometry + HSV + Mosaic",
+        "hsv_h": 0.015,
+        "hsv_s": 0.7,
+        "hsv_v": 0.4,
+        "degrees": 0.0,
+        "translate": 0.1,
+        "scale": 0.5,
+        "shear": 0.0,
+        "perspective": 0.0,
+        "flipud": 0.0,
+        "fliplr": 0.5,
+        "mosaic": 1.0,
+        "close_mosaic": 10,
+        "mixup": 0.0,
+        "cutmix": 0.0,
+        "copy_paste": 0.0,
+        "bgr": 0.0
+      },
+      "A2": {
+        "role": "geometric ablation of A1: translate + scale + horizontal flip; HSV and Mosaic off",
+        "hsv_h": 0.0,
+        "hsv_s": 0.0,
+        "hsv_v": 0.0,
+        "degrees": 0.0,
+        "translate": 0.1,
+        "scale": 0.5,
+        "shear": 0.0,
+        "perspective": 0.0,
+        "flipud": 0.0,
+        "fliplr": 0.5,
+        "mosaic": 0.0,
+        "close_mosaic": 0,
+        "mixup": 0.0,
+        "cutmix": 0.0,
+        "copy_paste": 0.0,
+        "bgr": 0.0
+      }
+    },
+    "seeds_per_condition": 5,
+    "epochs": 50,
+    "paired_seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "technical_smoke_excluded_from_inference": true,
+    "common_training": {
+      "model_family": "YOLO11n",
+      "task": "detect",
+      "epochs": 50,
+      "batch": 8,
+      "imgsz": 640,
+      "pretrained": true,
+      "patience": 100,
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "workers": 8,
+      "deterministic": true,
+      "amp": false,
+      "rect": false,
+      "cos_lr": false,
+      "multi_scale": 0.0,
+      "max_det": 300,
+      "training_validation_iou": 0.7,
+      "box": 7.5,
+      "cls": 0.5,
+      "dfl": 1.5,
+      "nbs": 64,
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "interpretation_of_contrasts": {
+      "A1_minus_A0": "full native standard policy versus no configurable augmentation",
+      "A2_minus_A0": "geometric package versus no configurable augmentation",
+      "A1_minus_A2": "joint addition of HSV + Mosaic to the same geometric package; does not isolate HSV and Mosaic individually"
+    }
+  },
+  "evaluation": {
+    "homogeneous_revalidation": {
+      "python": "3.14.7",
+      "ultralytics": "8.4.157",
+      "torch": "2.14.0+cpu",
+      "device": "cpu",
+      "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+      "imgsz": 640,
+      "batch": 8,
+      "workers": 0,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "rect": true,
+      "split": "val",
+      "augment": false
+    },
+    "operational": {
+      "selection_split": "val",
+      "rule": "maximum_recall_subject_to_precision_ge_0.98",
+      "precision_target": 0.98,
+      "prediction_confidence_floor": 0.001,
+      "nms_iou": 0.7,
+      "max_det": 300,
+      "detection_match_iou": 0.5,
+      "detection_match_iou_status": "provisional_unverified_against_classical_augmentation_v2"
+    },
+    "difficulty": {
+      "small_area_ratio_lt": 0.02423,
+      "medium_area_ratio": "[0.02423, 0.05196)",
+      "large_area_ratio_ge": 0.05196,
+      "cluster_iou_ge": 0.05,
+      "border_contact_normalized_le": 0.01,
+      "gt_counts": {
+        "small": 101,
+        "medium": 115,
+        "large": 96,
+        "clustered": 19,
+        "border_contact": 61
+      }
+    }
+  },
+  "results": {
+    "aggregate": {
+      "A0": {
+        "mAP50_95": {
+          "mean": 0.656527060740145,
+          "sd": 0.013305194559944365
+        },
+        "operational_recall": {
+          "mean": 0.3147435897435897,
+          "sd": 0.22909829534140283
+        },
+        "operational_f1": {
+          "mean": 0.4385897625019872,
+          "sd": 0.2733204275941358
+        },
+        "recall_small": {
+          "mean": 0.10297029702970298,
+          "sd": 0.09841404863199348
+        },
+        "recall_medium": {
+          "mean": 0.3878260869565217,
+          "sd": 0.2960100136251333
+        },
+        "recall_large": {
+          "mean": 0.45,
+          "sd": 0.29977566844040043
+        },
+        "recall_clustered": {
+          "mean": 0.32631578947368417,
+          "sd": 0.26157418189029846
+        },
+        "recall_border_contact": {
+          "mean": 0.2721311475409836,
+          "sd": 0.20658339674784745
+        },
+        "precision": {
+          "mean": 0.9874355692097627,
+          "sd": 0.0072584342579865395
+        },
+        "fp": {
+          "mean": 1.6,
+          "sd": 1.3416407864998738
+        },
+        "fn": {
+          "mean": 213.8,
+          "sd": 71.47866814651768
+        },
+        "confidence": {
+          "mean": 0.9620728492736816,
+          "sd": 0.01277007989850867
+        }
+      },
+      "A1": {
+        "mAP50_95": {
+          "mean": 0.728376449195613,
+          "sd": 0.00145754067885854
+        },
+        "operational_recall": {
+          "mean": 0.5384615384615384,
+          "sd": 0.12039512801918562
+        },
+        "operational_f1": {
+          "mean": 0.6888865964314201,
+          "sd": 0.10724751943157268
+        },
+        "recall_small": {
+          "mean": 0.21980198019801978,
+          "sd": 0.13364502991205507
+        },
+        "recall_medium": {
+          "mean": 0.6173913043478262,
+          "sd": 0.1428841454361303
+        },
+        "recall_large": {
+          "mean": 0.7791666666666666,
+          "sd": 0.08820401304173561
+        },
+        "recall_clustered": {
+          "mean": 0.5263157894736843,
+          "sd": 0.1341847240419154
+        },
+        "recall_border_contact": {
+          "mean": 0.40327868852459015,
+          "sd": 0.13548166236979928
+        },
+        "precision": {
+          "mean": 0.9823714004024104,
+          "sd": 0.001983577221568472
+        },
+        "fp": {
+          "mean": 3.0,
+          "sd": 0.7071067811865476
+        },
+        "fn": {
+          "mean": 144.0,
+          "sd": 37.5632799419859
+        },
+        "confidence": {
+          "mean": 0.8629846096038818,
+          "sd": 0.03437924156008209
+        }
+      },
+      "A2": {
+        "mAP50_95": {
+          "mean": 0.7254816683407224,
+          "sd": 0.004463877116371838
+        },
+        "operational_recall": {
+          "mean": 0.5480769230769231,
+          "sd": 0.05961883089018682
+        },
+        "operational_f1": {
+          "mean": 0.7019214203082205,
+          "sd": 0.04779176283549857
+        },
+        "recall_small": {
+          "mean": 0.22574257425742572,
+          "sd": 0.07119080400890117
+        },
+        "recall_medium": {
+          "mean": 0.6243478260869565,
+          "sd": 0.07665008998622266
+        },
+        "recall_large": {
+          "mean": 0.7958333333333333,
+          "sd": 0.03798871360168847
+        },
+        "recall_clustered": {
+          "mean": 0.4842105263157895,
+          "sd": 0.06862318321265946
+        },
+        "recall_border_contact": {
+          "mean": 0.380327868852459,
+          "sd": 0.12666520506283185
+        },
+        "precision": {
+          "mean": 0.9816488321175253,
+          "sd": 0.0010998408550767938
+        },
+        "fp": {
+          "mean": 3.2,
+          "sd": 0.4472135954999579
+        },
+        "fn": {
+          "mean": 141.0,
+          "sd": 18.601075237738275
+        },
+        "confidence": {
+          "mean": 0.8715892553329467,
+          "sd": 0.0210328716975702
+        }
+      }
+    },
+    "paired": {
+      "A1-A0": {
+        "mAP50_95": {
+          "n_pairs": 5,
+          "mean_delta": 0.07184938845546798,
+          "sd_delta": 0.0135225466459254,
+          "t_ci95": [
+            0.055058929121191355,
+            0.08863984778974461
+          ],
+          "positive_seeds": 5,
+          "negative_seeds": 0,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.0625
+        },
+        "operational_recall": {
+          "n_pairs": 5,
+          "mean_delta": 0.22371794871794873,
+          "sd_delta": 0.28035621184964404,
+          "t_ci95": [
+            -0.1243902662085418,
+            0.5718261636444393
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.1875
+        },
+        "recall_small": {
+          "n_pairs": 5,
+          "mean_delta": 0.1168316831683168,
+          "sd_delta": 0.17240236720537755,
+          "t_ci95": [
+            -0.09723412939570578,
+            0.3308974957323394
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.3125
+        },
+        "recall_medium": {
+          "n_pairs": 5,
+          "mean_delta": 0.2295652173913044,
+          "sd_delta": 0.35861527426176015,
+          "t_ci95": [
+            -0.21571445786549212,
+            0.6748448926481009
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.1875
+        },
+        "recall_large": {
+          "n_pairs": 5,
+          "mean_delta": 0.3291666666666666,
+          "sd_delta": 0.3354910631778769,
+          "t_ci95": [
+            -0.08740050820040768,
+            0.7457338415337409
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.1875
+        },
+        "recall_clustered": {
+          "n_pairs": 5,
+          "mean_delta": 0.2,
+          "sd_delta": 0.3188448680181255,
+          "t_ci95": [
+            -0.19589819363013716,
+            0.5958981936301372
+          ],
+          "positive_seeds": 3,
+          "negative_seeds": 1,
+          "zero_seeds": 1,
+          "exact_wilcoxon_two_sided_p": 0.25
+        },
+        "recall_border_contact": {
+          "n_pairs": 5,
+          "mean_delta": 0.13114754098360656,
+          "sd_delta": 0.26229508196721313,
+          "t_ci95": [
+            -0.19453481920098728,
+            0.45682990116820044
+          ],
+          "positive_seeds": 3,
+          "negative_seeds": 2,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.4375
+        }
+      },
+      "A2-A0": {
+        "mAP50_95": {
+          "n_pairs": 5,
+          "mean_delta": 0.06895460760057734,
+          "sd_delta": 0.014199254793739104,
+          "t_ci95": [
+            0.05132390412186928,
+            0.0865853110792854
+          ],
+          "positive_seeds": 5,
+          "negative_seeds": 0,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.0625
+        },
+        "operational_recall": {
+          "n_pairs": 5,
+          "mean_delta": 0.23333333333333334,
+          "sd_delta": 0.20344865291302275,
+          "t_ci95": [
+            -0.01928153447182035,
+            0.485948201138487
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.125
+        },
+        "recall_small": {
+          "n_pairs": 5,
+          "mean_delta": 0.12277227722772277,
+          "sd_delta": 0.0976641211537243,
+          "t_ci95": [
+            0.001506254074932642,
+            0.24403830038051288
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.125
+        },
+        "recall_medium": {
+          "n_pairs": 5,
+          "mean_delta": 0.23652173913043478,
+          "sd_delta": 0.25607182357295255,
+          "t_ci95": [
+            -0.08143342515448637,
+            0.5544769034153559
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.1875
+        },
+        "recall_large": {
+          "n_pairs": 5,
+          "mean_delta": 0.3458333333333333,
+          "sd_delta": 0.2712736804819484,
+          "t_ci95": [
+            0.009002570618666883,
+            0.6826640960479997
+          ],
+          "positive_seeds": 5,
+          "negative_seeds": 0,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.0625
+        },
+        "recall_clustered": {
+          "n_pairs": 5,
+          "mean_delta": 0.15789473684210525,
+          "sd_delta": 0.22017369119317778,
+          "t_ci95": [
+            -0.11548700886409674,
+            0.43127648254830725
+          ],
+          "positive_seeds": 3,
+          "negative_seeds": 2,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.3125
+        },
+        "recall_border_contact": {
+          "n_pairs": 5,
+          "mean_delta": 0.1081967213114754,
+          "sd_delta": 0.15834741824319018,
+          "t_ci95": [
+            -0.0884175671296078,
+            0.3048110097525586
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.3125
+        }
+      },
+      "A1-A2": {
+        "mAP50_95": {
+          "n_pairs": 5,
+          "mean_delta": 0.0028947808548906327,
+          "sd_delta": 0.0037162887824710154,
+          "t_ci95": [
+            -0.001719601133232127,
+            0.007509162843013392
+          ],
+          "positive_seeds": 3,
+          "negative_seeds": 2,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.3125
+        },
+        "operational_recall": {
+          "n_pairs": 5,
+          "mean_delta": -0.009615384615384614,
+          "sd_delta": 0.1729730219945746,
+          "t_ci95": [
+            -0.22438975868655575,
+            0.20515898945578653
+          ],
+          "positive_seeds": 3,
+          "negative_seeds": 2,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.8125
+        },
+        "recall_small": {
+          "n_pairs": 5,
+          "mean_delta": -0.005940594059405951,
+          "sd_delta": 0.19834132313438804,
+          "t_ci95": [
+            -0.25221387435147496,
+            0.24033268623266305
+          ],
+          "positive_seeds": 2,
+          "negative_seeds": 3,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 1.0
+        },
+        "recall_medium": {
+          "n_pairs": 5,
+          "mean_delta": -0.0069565217391304056,
+          "sd_delta": 0.20654690922133084,
+          "t_ci95": [
+            -0.26341838285951796,
+            0.24950533938125713
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.625
+        },
+        "recall_large": {
+          "n_pairs": 5,
+          "mean_delta": -0.016666666666666673,
+          "sd_delta": 0.11613532276807277,
+          "t_ci95": [
+            -0.16086771586755655,
+            0.12753438253422322
+          ],
+          "positive_seeds": 3,
+          "negative_seeds": 1,
+          "zero_seeds": 1,
+          "exact_wilcoxon_two_sided_p": 0.875
+        },
+        "recall_clustered": {
+          "n_pairs": 5,
+          "mean_delta": 0.04210526315789474,
+          "sd_delta": 0.14122534594735517,
+          "t_ci95": [
+            -0.13324916453880803,
+            0.21745969085459754
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.625
+        },
+        "recall_border_contact": {
+          "n_pairs": 5,
+          "mean_delta": 0.022950819672131185,
+          "sd_delta": 0.23489006045353567,
+          "t_ci95": [
+            -0.2687037119289297,
+            0.3146053512731921
+          ],
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "zero_seeds": 0,
+          "exact_wilcoxon_two_sided_p": 0.625
+        }
+      }
+    }
+  },
+  "frozen_interpretation": {
+    "A1_vs_A0": "A1 shows a large, directionally consistent mAP50-95 increase (5/5 seeds). Operational recall and difficulty-stratum means are also higher on average, but are more variable across seeds.",
+    "A2_vs_A0": "A2 shows a large, directionally consistent mAP50-95 increase (5/5 seeds). Operational recall and difficulty-stratum means are also higher on average, with 4/5 positive seeds for operational recall, small objects and border contact, and 5/5 for large objects.",
+    "A1_vs_A2": "A1 and A2 remain close. The observed data do not establish a clear additional global or operational benefit from jointly adding HSV + Mosaic over geometry.",
+    "winner_or_promoted_recipe": null,
+    "reason_no_winner": "This campaign is treated as a comparative ablation, not as retrospective winner selection. A1-A2 separation is small/inconsistent, and difficult-stratum evidence is limited by n=5 and small clustered-GT count.",
+    "geometry_mechanism_wording": "Results are compatible with the geometric component accounting for a substantial fraction of the full-policy improvement; no causal attribution to translate, scale or horizontal flip individually is supported."
+  },
+  "frozen_decisions": {
+    "do_not_change_A0_A1_A2_recipes": true,
+    "do_not_change_validation_threshold_rule": true,
+    "do_not_tune_on_test": true,
+    "keep_test_frozen_for_now": true,
+    "do_not_claim_external_generalization": true,
+    "do_not_call_A2_best": true,
+    "do_not_claim_HSV_or_Mosaic_individually_useless": true,
+    "do_not_compare_absolute_metrics_directly_to_historical_v2": true,
+    "campaign_closed_no_more_training_required": true,
+    "A0_wording_use_configurable_augmentations_zeroed_not_no_augmentation": true,
+    "cloud_environment_full_stack_claim_limited_to_A0_seed01": true,
+    "internal_albumentations_shared_across_conditions_not_asserted_without_logs": true
+  },
+  "source_archives": {
+    "EXPERIMENTOS_A0_A1_A2.zip": {
+      "sha256": "a5f0f58e98dfd16300ec77093306f9bb7ebf3cfb9dd4805505ae2e162274f860",
+      "size_bytes": 73830226
+    },
+    "validation_results.zip": {
+      "sha256": "83e5cbc3851fcf7782fa0a7ab9dbc99af840e8e5641d98fc81c20ecdf73566c4",
+      "size_bytes": 12914
+    },
+    "operational_results.zip": {
+      "sha256": "8bcbe4c282d76373a45eeef07e4ed6530e39cca5ef67e7014e3e16d8b09befcb",
+      "size_bytes": 2769430
+    },
+    "integral_results.zip": {
+      "sha256": "0fabf998adc33cfdcac3d41d43191a7c0642c4264bdcfb3792550e2fbbd972ec",
+      "size_bytes": 22353
+    }
+  },
+  "checkpoint_sha256": [
+    {
+      "condition": "A0",
+      "seed": 1,
+      "sha256": "daae2632aab33fc66354c06d9f6e5ac42696658dc6e87c7ca1cdaad3ceb51379",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A0/seed01/best.pt"
+    },
+    {
+      "condition": "A0",
+      "seed": 2,
+      "sha256": "8f8b3ce8ad4dafaaed61c606f9b03007b5a429c6b218ab1f8fe1c895a8084a96",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A0/seed02/best.pt"
+    },
+    {
+      "condition": "A0",
+      "seed": 3,
+      "sha256": "5b2ece08e029463a596064ddeeeea1a3362b3ac95becdd35d842b3cba29ee701",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A0/seed03/best.pt"
+    },
+    {
+      "condition": "A0",
+      "seed": 4,
+      "sha256": "4f59ece982c6581df02b973279fb2124e3209468fbac6543050b6a33df9ea63b",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A0/seed04/best.pt"
+    },
+    {
+      "condition": "A0",
+      "seed": 5,
+      "sha256": "a7b13738d53c70dc0f1eb0b6f4b333c3a76b1edd41b8e3799d6c25894aace278",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A0/seed05/best.pt"
+    },
+    {
+      "condition": "A1",
+      "seed": 1,
+      "sha256": "70c4a667ac62cc14225bf224c231a2ae0e7131d3dbe86ef13c47df30b1622029",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A1/seed01/best.pt"
+    },
+    {
+      "condition": "A1",
+      "seed": 2,
+      "sha256": "b36d0b62d4610283966ed54e200f198fab3b1fa5e076f082fd175b0ea6d3cb96",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A1/seed02/best.pt"
+    },
+    {
+      "condition": "A1",
+      "seed": 3,
+      "sha256": "14626568b1549d38758ac0eb6997f8bbb9dba772be61bf2404ca9092eba439bd",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A1/seed03/best.pt"
+    },
+    {
+      "condition": "A1",
+      "seed": 4,
+      "sha256": "f84cab7ae2109bde77c0de93f8d2e66fd9f17884901bc5e55a0e4c850d1c3c2d",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A1/seed04/best.pt"
+    },
+    {
+      "condition": "A1",
+      "seed": 5,
+      "sha256": "3c20234e3e354ca078ecac7319d7068eb9e4631a232cf512ab20c84f6939c55e",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A1/seed05/best.pt"
+    },
+    {
+      "condition": "A2",
+      "seed": 1,
+      "sha256": "d8674dc37cc5bcd1cb0b87b69fa825b7a025d74baf9ee54acab3043f354a1b43",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A2/seed01/best.pt"
+    },
+    {
+      "condition": "A2",
+      "seed": 2,
+      "sha256": "831e7c9008512f73e371f8917bf8d571ce83ef912942b24bfa15a68a617e5b19",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A2/seed02/best.pt"
+    },
+    {
+      "condition": "A2",
+      "seed": 3,
+      "sha256": "0a1363cede00aeb92add8369576a89c59fed4c8cd17dac9a51475c461eeb10bf",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A2/seed03/best.pt"
+    },
+    {
+      "condition": "A2",
+      "seed": 4,
+      "sha256": "11398ddab8c9a6bf51222cce10c36c742c5c35714205498848c9d7ad450bdd3d",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A2/seed04/best.pt"
+    },
+    {
+      "condition": "A2",
+      "seed": 5,
+      "sha256": "875fab55507c678501846cb316469a562254e1f9d84d62d53a60f22ad0c31bfc",
+      "path_in_archive": "EXPERIMENTOS_A0_A1_A2/A2/seed05/best.pt"
+    }
+  ],
+  "training_environment_evidence": {
+    "source": "Ultralytics Platform console excerpt supplied by the authors for A0 seed01",
+    "confirmed_run": "A0_seed01",
+    "ultralytics": "8.4.157",
+    "python": "3.12.3",
+    "pytorch": "2.14.0+cu132",
+    "cuda_build_from_pytorch_suffix": "13.2",
+    "cuda_device_index": 3,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "reported_vram_mib": 97252,
+    "scope_caution": "The complete Python/PyTorch/CUDA/GPU stack was directly recovered from the A0 seed01 console. Ultralytics 8.4.157 is additionally preserved in the 15 formal checkpoints. Full environment equality across every A1/A2 run was not independently recoverable from the archived artifacts and is therefore not asserted."
+  },
+  "augmentation_pipeline_correction": {
+    "A0_safe_definition": "A0 zeroed the campaign-targeted configurable augmentation coefficients (HSV, geometric transforms, Mosaic, MixUp, CutMix, Copy-Paste and BGR-related settings in the preserved training configuration). It must not be described as literally augmentation-free.",
+    "A0_console_albumentations_observed": {
+      "Blur": {
+        "p": 0.01,
+        "blur_limit": [
+          3,
+          7
+        ]
+      },
+      "MedianBlur": {
+        "p": 0.01,
+        "blur_limit": [
+          3,
+          7
+        ]
+      },
+      "ToGray": {
+        "p": 0.01,
+        "method": "weighted_average",
+        "num_output_channels": 3
+      },
+      "CLAHE": {
+        "p": 0.01,
+        "clip_limit": [
+          1.0,
+          4.0
+        ],
+        "tile_grid_size": [
+          8,
+          8
+        ]
+      }
+    },
+    "interpretation_caution": "The A0 console proves that an internal/default Albumentations block remained active. The preserved archive does not contain matching console excerpts for A1/A2, so the manuscript should compare configured augmentation packages rather than claim an absolute no-augmentation baseline."
+  },
+  "documented_limitations_at_closure": [
+    "Domain provenance: the current reproducible profile does not contain reliable laboratory/semi-field metadata. The authors' curation states that laboratory images were removed from the revised 109-image validation/test subsets, but that statement is not independently encoded in the current machine-readable profile.",
+    "Historical matching equivalence: A0/A1/A2 operational matching is frozen at IoU>=0.50. Exact equivalence with the historical Classical Augmentation v2 matching implementation was not verified and must not be claimed.",
+    "Cloud environment scope: Python 3.12.3, PyTorch 2.14.0+cu132, CUDA build 13.2 and the RTX PRO 6000 Blackwell Server Edition GPU were directly recovered from A0 seed01. Full-stack equality for all A1/A2 cloud runs is not independently documented.",
+    "Internal Albumentations: an internal/default Albumentations block is explicitly observed for A0 seed01. Equivalent console evidence for A1/A2 was not retained in the archive.",
+    "Test remains frozen for this closure and is historically consulted; it is not a virgin external holdout and was not used to choose recipes, thresholds or conclusions here."
+  ],
+  "manuscript_safe_notes": [
+    "Describe A0 as a baseline with the targeted configurable augmentation coefficients set to zero, not as augmentation-free.",
+    "State the recovered cloud stack as directly confirmed for A0 seed01; do not silently generalize Python/PyTorch/CUDA/GPU metadata to every run unless additional logs are recovered.",
+    "For the revised 109-image evaluation split, distinguish author curation from machine-readable domain metadata; the latter is unavailable in the current profile.",
+    "Keep test frozen in the present campaign narrative and do not describe it as an external virgin holdout.",
+    "Treat A0/A1/A2 as a separate campaign from historical Classical Augmentation v2; do not compare absolute metrics as though the evaluation protocols were identical."
+  ]
+}

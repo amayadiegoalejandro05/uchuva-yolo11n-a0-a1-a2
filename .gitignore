@@ -1,0 +1,49 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+# Dataset and model payloads (scientific CSV/JSON results remain tracked)
+dataset/
+datasets/
+images/
+labels/
+weights/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.cache
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.webp
+# Local execution output and temporary archives
+/runs/
+/outputs/
+*.zip
+*.tmp
+*.temp
+*.log
+*.swp
+# Credentials and local settings
+.env
+.env.*
+.aws/
+.ssh/
+.netrc
+.git-credentials
+credentials*.json
+secrets*.json
+*.pem
+*.key
+.DS_Store
+Thumbs.db

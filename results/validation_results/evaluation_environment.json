@@ -1,0 +1,16 @@
+{
+  "python": "3.14.7",
+  "ultralytics": "8.4.157",
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "imgsz": 640,
+  "batch": 8,
+  "workers": 0,
+  "conf": 0.001,
+  "iou": 0.7,
+  "max_det": 300,
+  "rect": true,
+  "split": "val",
+  "augment": false
+}

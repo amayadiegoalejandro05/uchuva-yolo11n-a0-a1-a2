@@ -1,0 +1,21 @@
+{
+  "validation_images": 109,
+  "validation_instances": 312,
+  "size_small": 101,
+  "size_medium": 115,
+  "size_large": 96,
+  "clustered_true": 19,
+  "clustered_false": 293,
+  "border_contact_true": 61,
+  "border_contact_false": 251,
+  "definitions": {
+    "small_area_ratio_lt": 0.02423,
+    "medium_area_ratio_ge": 0.02423,
+    "medium_area_ratio_lt": 0.05196,
+    "large_area_ratio_ge": 0.05196,
+    "cluster_iou_ge": 0.05,
+    "border_contact_normalized_le": 0.01,
+    "detection_match_iou_ge": 0.5,
+    "detection_match_iou_status": "provisional_unverified_against_classical_augmentation_v2"
+  }
+}

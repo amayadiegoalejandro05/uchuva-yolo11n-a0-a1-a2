@@ -1,0 +1,6 @@
+# RECONSTRUCTED local template, not historical YAML. Configure path locally.
+# Validation only: no train or test aliases.
+path: /REPLACE_WITH_LOCAL_DATASET_ROOT
+val: images/val
+names:
+  0: calyx

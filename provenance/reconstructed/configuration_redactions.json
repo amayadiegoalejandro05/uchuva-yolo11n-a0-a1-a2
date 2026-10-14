@@ -1,0 +1,182 @@
+[
+  {
+    "run": "A0_seed01",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A0/seed01/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "fb3e9b1c49ef8b41cad7c3ecee9eea0dc160329f4fe52f2f8bcf0ae05a6b1b08",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A0_seed02",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A0/seed02/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "82e278b3b90bc671a06d42d5efbbf269728d45cdac3016db0969844e3829b086",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A0_seed03",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A0/seed03/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "016050bf9258fe91a31707ddb50e1aedbd430da7cb44a70a0015fbb8f3ce6955",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A0_seed04",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A0/seed04/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "6df0f95c1cdd8306c5dc1ae5f8fefd2afa6748b27330514ce3274b116b769c5a",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A0_seed05",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A0/seed05/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "5b885675e26be33b896808e3156b7d80c96ce0fa4ae1e54880a6927da62f153f",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A1_seed01",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A1/seed01/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "f8bc4f21ae8448a7727f7769d2b8bd4a027dc6f1c312546a588deb6cd94c7685",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A1_seed02",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A1/seed02/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "045374d9b528b59686779da9e3abdb8ba36bc8970433da936ede7f714befa1a3",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A1_seed03",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A1/seed03/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "3d57bb362fe0e984c8d84ec55110f9c819e8692673e2ff5516932aad7e7fd21c",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A1_seed04",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A1/seed04/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "cf16796ed3370a9ef72126f73758114673baa22c894906af682e459582ffe23d",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A1_seed05",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A1/seed05/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "c112be0e718b36b7889c8d5c93cbf6d40a580334fc64ca49572c5972a34cb3c1",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A2_seed01",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A2/seed01/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "7c698ba33eb27fc2f85ca7421ca486a4e7d15b6ee3eaf597e5addd07ec1cd674",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A2_seed02",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A2/seed02/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "63fa1c20b8197fe6e0f66e95b0d42463ee5e1f5a5bd8793e0718a4dbeff5e6ab",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A2_seed03",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A2/seed03/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "38bb798f413414a6af55f1cf1b346d43ebf10dd8eefa5113c2a62823ea4f41c7",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A2_seed04",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A2/seed04/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "8edde272d08046a7cb3a4f4bdcb09bf6cc63308e62b9e0c639ea6363e4cb00e1",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  },
+  {
+    "run": "A2_seed05",
+    "original_source": "WORKSPACE/EXPERIMENTOS_A0_A1_A2/A2/seed05/TRAINING CONFIGURATION/training-configuration.json",
+    "original_sha256": "d5a1a221d322afed70c4167ff6df83e41c49ebf07f8010bbc9ee3c0bff0c8464",
+    "removed_fields": [
+      "model",
+      "data",
+      "project",
+      "save_dir"
+    ],
+    "policy_and_seed_values_changed": false
+  }
+]

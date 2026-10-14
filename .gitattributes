@@ -1,0 +1,2 @@
+# Preserve every scientific source byte; no EOL, filters or ident substitution.
+* -text -filter -ident -working-tree-encoding
